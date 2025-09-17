@@ -16,6 +16,12 @@ set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 set title=%mod_cs%
 
+:: Compile resource file
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+if %errorlevel% neq 0 pause
+
 :: Compile demo map file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /E

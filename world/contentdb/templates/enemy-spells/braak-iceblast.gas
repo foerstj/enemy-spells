@@ -1,0 +1,51 @@
+[t:template,n:spell_braak_iceblast_player]
+{
+	specializes = base_spell_good;
+
+	category_name = "magic";
+	doc = "spell braak iceblast (player)";
+	[aspect]
+	{
+		gold_value = 1;  // TBD
+	}
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[common]
+	{
+		screen_name = "Frost Shot";
+		description = "Spell of the Braak Mage.";
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "nature_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
+			[*]
+			{
+				action* = call_sfx_script("braak_iceblast");
+				condition* = receive_world_message("we_req_cast");
+			}
+		}
+	}
+	[magic]
+	{
+		cast_range = 12;
+		cast_reload_delay = 1;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		usage_context_flags = uc_offensive;
+
+		required_level = 20;
+		max_level = 40;  // TBD
+		mana_cost = 0;
+		mana_cost_modifier = #magic * 0.45;  // factor TBD
+		attack_damage_modifier_min = (#magic * 2.0) * 0.9;  // factor TBD
+		attack_damage_modifier_max = (#magic * 2.0) * 1.1;  // factor TBD
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
+	}
+	[spell_default] {}
+}

@@ -49,6 +49,13 @@
 	  p position = -0.479746,0,-0.333174,0x344c0766;
 	}
 }
+[t:spell_braak_iceblast_player,n:0x0010000c]
+{
+	[placement]
+	{
+	  p position = 0.679693,0,-0.245119,0x344c0766;
+	}
+}
 [t:spell_sand_mage_blast,n:0x0010000b]
 {
 	[aspect]
