@@ -1,0 +1,21 @@
+:: names
+set mod=enemy-spells
+set mod_cs=Enemy Spells
+set map=%mod%-demo
+set map_cs=%mod_cs% Demo
+
+:: path of Bits dir
+set bits=%~dp0.
+:: path of DS installation
+set ds=%DungeonSiege%
+
+:: Compile resource file
+call "%bits%\build.bat" %*
+
+::pause
+
+:: Run it!
+"%ds%\DSLOA.exe" nointro=true map=%map%
+
+:: Cleanup resources so as not to confuse Siege Editor
+call "%bits%\cleanup.bat" %*
