@@ -1,0 +1,18 @@
+[t:spell_droog_starburst,n:0x00100003]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[placement]
+	{
+	  p position = 1.59758,0,0.0390959,0x87bfd221;
+	}
+}
+[t:spell_starburst,n:0x00100004]
+{
+	[placement]
+	{
+	  p position = -1.64849,0,-0.0481539,0x87bfd221;
+	}
+}
