@@ -6,13 +6,57 @@
 	}
 	[placement]
 	{
-	  p position = 1.59758,0,0.0390959,0x87bfd221;
+	  p position = -0.0713866,0,-1.5793,0x87bfd221;
 	}
 }
 [t:spell_starburst,n:0x00100004]
 {
 	[placement]
 	{
-	  p position = -1.64849,0,-0.0481539,0x87bfd221;
+	  p position = -0.0695659,0,-2.74143,0x87bfd221;
+	}
+}
+[t:spell_ice_mage_balls,n:0x0010000a]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[placement]
+	{
+	  p position = 1.56576,0,-0.229858,0xb8c51b9e;
+	}
+}
+[t:spell_dark_lunger_zap,n:0x00100009]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[placement]
+	{
+	  p position = -0.861058,0,0.95723,0x33487838;
+	}
+}
+[t:spell_braak_iceblast,n:0x00100008]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[placement]
+	{
+	  p position = -0.479746,0,-0.333174,0x344c0766;
+	}
+}
+[t:spell_sand_mage_blast,n:0x0010000b]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[placement]
+	{
+	  p position = 0.674881,0,-0.043169,0xf993c993;
 	}
 }

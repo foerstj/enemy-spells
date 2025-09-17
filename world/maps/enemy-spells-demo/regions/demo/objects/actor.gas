@@ -1,8 +1,40 @@
+[t:braak_magic,n:0x00100002]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.260784,0,0.0980396,0x032d0ff5;
+	}
+}
+[t:dark_caster,n:0x00100005]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.0133076,0,0.213981,0xe881eddd;
+	}
+}
 [t:droog_mage,n:0x00100001]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -0.0389194,0,-0.0199602,0x06ebd16c;
+	}
+}
+[t:swamp_witch,n:0x00100006]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.276155,0,0.168763,0xcbc86af5;
+	}
+}
+[t:sand_mage,n:0x00100007]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.00221825,0,0.46587,0x293009b5;
 	}
 }

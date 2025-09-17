@@ -1,18 +1,26 @@
 [streamer_node_index]
 {
+  x * = 0x032D0FF5;
   x * = 0x06EBD16C;
+  x * = 0x293009B5;
   x * = 0x33487838;
+  x * = 0x344C0766;
   x * = 0x407E3ED2;
   x * = 0x564CD945;
   x * = 0x5A6FD2B8;
+  x * = 0x6D63D56E;
   x * = 0x7347F0B9;
+  x * = 0x73670C55;
   x * = 0x7569D968;
+  x * = 0x7BE7F0CC;
   x * = 0x87BFD221;
   x * = 0x8AA0CE97;
   x * = 0x8C6C1FC3;
   x * = 0xA4327AC5;
   x * = 0xB8C51B9E;
+  x * = 0xC069ADCD;
   x * = 0xCBC86AF5;
   x * = 0xE881EDDD;
   x * = 0xE9FB5711;
+  x * = 0xF993C993;
 }
