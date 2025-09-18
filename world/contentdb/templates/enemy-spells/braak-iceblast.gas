@@ -26,6 +26,7 @@
 			[*]
 			{
 				action* = call_sfx_script("braak_iceblast");
+				action* = play_sound("s_e_attack_braak_mage");
 				condition* = receive_world_message("we_req_cast");
 			}
 		}
