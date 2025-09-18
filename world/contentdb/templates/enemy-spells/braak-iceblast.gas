@@ -1,8 +1,7 @@
 [t:template,n:spell_braak_iceblast_player]
 {
-	specializes = base_spell_good;
+	specializes = base_spell_enemy_spells_nature_magic;
 
-	category_name = "magic";
 	doc = "spell braak iceblast (player)";
 	[aspect]
 	{

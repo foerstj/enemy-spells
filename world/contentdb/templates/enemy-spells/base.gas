@@ -1,0 +1,6 @@
+[t:template,n:base_spell_enemy_spells_nature_magic]
+{
+	specializes = base_spell_good;
+
+	category_name = "magic";
+}
