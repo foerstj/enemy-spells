@@ -8,6 +8,19 @@
 		damage_max = 152;
 		damage_min = 132;
 	}
+	[common]
+	{
+		screen_name = "Searing Blast";
+		description = "Spell of the Sand Mage.";
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "combat_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
+		}
+	}
 	[magic]
 	{
 		cast_range = 11;
@@ -16,8 +29,11 @@
 		mana_cost = 0;
 		requires_line_of_sight = true;
 		speed_bias = 1;
-		target_type_flags = tt_conscious_enemy;
 		usage_context_flags = uc_offensive;
+
+		required_level = 62;
+		max_level = 82;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
 	[spell_fire]
 	{

@@ -5,13 +5,20 @@
 	doc = "Dark Lunger Zap (player)";
 	[attack]
 	{
-		 damage_min = 72;
-		 damage_max = 78;
+		damage_min = 72;
+		damage_max = 78;
 	}
 	[common]
 	{
+		screen_name = "Arc";
+		description = "Spell of the Dark Caster.";
 		[template_triggers]
 		{
+			[*]
+			{
+				action* = call_sfx_script( "nature_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
 			[*]
 			{
 				action* = call_sfx_script("dark_lunger_zap");
@@ -27,8 +34,11 @@
 		mana_cost = 0;
 		requires_line_of_sight = true;
 		speed_bias = 1;
-		target_type_flags = tt_conscious_enemy;
 		usage_context_flags = uc_offensive;
+
+		required_level = 32;
+		max_level = 52;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
 	[spell_instant_hit] {}
 }

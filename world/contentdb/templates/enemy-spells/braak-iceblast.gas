@@ -40,7 +40,7 @@
 		usage_context_flags = uc_offensive;
 
 		required_level = 20;
-		max_level = 45;
+		max_level = 40;
 		mana_cost = 0;
 		mana_cost_modifier = #magic * 0.7;
 		attack_damage_modifier_min = (#magic * 2.8) * 0.9;
