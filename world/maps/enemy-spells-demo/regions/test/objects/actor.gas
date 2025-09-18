@@ -1,0 +1,12 @@
+[t:braak_magic,n:0x00300000]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.119642,0,0.0960426,0x3d48d951;
+	}
+}

@@ -11,4 +11,13 @@
 			0x01020002 = 0x8CD214FD,5;
 		}
 	}
+	[t:stitch_editor,n:test]
+	{
+		dest_region = test;
+		[node_ids]
+		{
+			0x01030001 = 0x7347F0B9,8;
+			0x01030002 = 0x7347F0B9,7;
+		}
+	}
 }

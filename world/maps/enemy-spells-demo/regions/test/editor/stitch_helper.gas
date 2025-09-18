@@ -1,0 +1,14 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000003;
+	source_region_name = test;
+	[t:stitch_editor,n:demo]
+	{
+		dest_region = demo;
+		[node_ids]
+		{
+			0x01030001 = 0xA5489EB1,5;
+			0x01030002 = 0xA5489EB1,6;
+		}
+	}
+}
