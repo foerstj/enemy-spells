@@ -13,3 +13,18 @@
 	  p position = -0.0323171,0,0.0208807,0x35afaf5d;
 	}
 }
+[t:enemy_spells_demo_pcontent_neener_20_29,n:0x00200002]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -2.91646,0,0.20021,0x35afaf5d;
+	}
+}
