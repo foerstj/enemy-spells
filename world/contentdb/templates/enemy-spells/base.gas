@@ -4,3 +4,9 @@
 
 	category_name = "magic";
 }
+[t:template,n:base_spell_enemy_spells_combat_magic]
+{
+	specializes = base_spell_dark;
+
+	category_name = "magic";
+}
