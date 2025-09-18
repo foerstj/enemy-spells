@@ -1,3 +1,11 @@
+[t:shovel,n:0x00100001]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0,0,1.83272,0x87bfd221;
+	}
+}
 [t:spell_droog_starburst,n:0x00100003]
 {
 	[aspect]
