@@ -144,6 +144,15 @@
 			* = lf_dirt;
 		}
 	}
+	[t:lf_snode,n:0x8cd214fd]
+	{
+		[t:lf_lnode,n:0]
+		{
+			* = lf_human_player;
+			* = lf_computer_player;
+			* = lf_dirt;
+		}
+	}
 	[t:lf_snode,n:0xa4327ac5]
 	{
 		[t:lf_lnode,n:0]

@@ -1,0 +1,15 @@
+[t:verma,n:0x00200001]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.0323171,0,0.0208807,0x35afaf5d;
+	}
+}
