@@ -3,11 +3,6 @@
 	specializes = base_spell_enemy_spells_combat_magic;
 
 	doc = "Spell sand mage blast (player)";
-	[attack]
-	{
-		damage_max = 152;
-		damage_min = 132;
-	}
 	[common]
 	{
 		screen_name = "Searing Blast";
@@ -31,13 +26,31 @@
 		speed_bias = 1;
 		usage_context_flags = uc_offensive;
 
-		required_level = 62;
-		max_level = 82;
 		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
 	[spell_fire]
 	{
 		effect_script = sand_mage_blast;
 		particle_fit = 0.2;
+	}
+
+	// Balancing roughly based on spell_inferno
+	[aspect]
+	{
+		gold_value = 180000;
+	}
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		required_level = 62;
+		max_level = 82;
+		mana_cost = 0;
+		mana_cost_modifier = #magic * 3.6;
+		attack_damage_modifier_min = (#magic * 4.5) * 0.9;
+		attack_damage_modifier_max = (#magic * 4.5) * 1.1;
 	}
 }

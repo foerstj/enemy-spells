@@ -3,11 +3,6 @@
 	specializes = base_spell_enemy_spells_nature_magic;
 
 	doc = "spell Ice mage balls (player)";
-	[attack]
-	{
-		 damage_max = 99;
-		 damage_min = 95;
-	}
 	[common]
 	{
 		screen_name = "Spiral Freeze";
@@ -35,9 +30,27 @@
 		speed_bias = 1;
 		usage_context_flags = uc_offensive;
 
-		required_level = 40;
-		max_level = 60;
 		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
 	[spell_default] { }
+
+	// Balancing roughly based on spell_shock_wave
+	[aspect]
+	{
+		gold_value = 50000;
+	}
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		required_level = 40;
+		max_level = 60;
+		mana_cost = 0;
+		mana_cost_modifier = #magic * 0.8;
+		attack_damage_modifier_min = (#magic * 2.8) * 0.9;
+		attack_damage_modifier_max = (#magic * 2.8) * 1.1;
+	}
 }
