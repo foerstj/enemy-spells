@@ -3,15 +3,6 @@
 	specializes = base_spell_enemy_spells_nature_magic;
 
 	doc = "spell braak iceblast (player)";
-	[aspect]
-	{
-		gold_value = 3680;
-	}
-	[attack]
-	{
-		damage_min = 0;
-		damage_max = 0;
-	}
 	[common]
 	{
 		screen_name = "Frost Shot";
@@ -39,13 +30,27 @@
 		speed_bias = 1;
 		usage_context_flags = uc_offensive;
 
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
+	}
+	[spell_default] {}
+
+	// Balancing roughly based on spell_lightning
+	[aspect]
+	{
+		gold_value = 3500;
+	}
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
 		required_level = 20;
 		max_level = 40;
 		mana_cost = 0;
 		mana_cost_modifier = #magic * 0.7;
 		attack_damage_modifier_min = (#magic * 2.8) * 0.9;
 		attack_damage_modifier_max = (#magic * 2.8) * 1.1;
-		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
-	[spell_default] {}
 }
