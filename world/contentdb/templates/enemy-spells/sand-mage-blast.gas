@@ -28,7 +28,7 @@
 	// Balancing roughly based on spell_inferno
 	[aspect]
 	{
-		gold_value = 180000;
+		gold_value = 130000;
 	}
 	[magic]
 	{

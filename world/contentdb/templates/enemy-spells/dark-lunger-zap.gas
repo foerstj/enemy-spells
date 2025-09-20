@@ -37,7 +37,7 @@
 	// Balancing roughly based on spell_lightning_blast
 	[aspect]
 	{
-		gold_value = 20000;
+		gold_value = 33000;
 	}
 	[magic]
 	{

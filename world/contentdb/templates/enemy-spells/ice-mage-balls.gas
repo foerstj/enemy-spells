@@ -41,7 +41,7 @@
 	// Balancing roughly based on spell_shock_wave
 	[aspect]
 	{
-		gold_value = 50000;
+		gold_value = 48000;
 	}
 	[magic]
 	{

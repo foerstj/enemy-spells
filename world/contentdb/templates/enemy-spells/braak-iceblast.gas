@@ -37,7 +37,7 @@
 	// Balancing roughly based on spell_lightning
 	[aspect]
 	{
-		gold_value = 3500;
+		gold_value = 3000;
 	}
 	[magic]
 	{
