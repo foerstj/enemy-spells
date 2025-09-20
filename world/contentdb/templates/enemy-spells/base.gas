@@ -3,10 +3,60 @@
 	specializes = base_spell_good;
 
 	category_name = "magic";
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		mana_cost = 0;
+
+		speed_bias = 1;
+		requires_line_of_sight = true;
+		usage_context_flags = uc_offensive;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "nature_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
+		}
+	}
 }
 [t:template,n:base_spell_enemy_spells_combat_magic]
 {
 	specializes = base_spell_dark;
 
 	category_name = "magic";
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		mana_cost = 0;
+
+		speed_bias = 1;
+		requires_line_of_sight = true;
+		usage_context_flags = uc_offensive;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "combat_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
+		}
+	}
 }

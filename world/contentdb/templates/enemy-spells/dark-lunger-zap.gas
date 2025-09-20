@@ -25,12 +25,6 @@
 	{
 		cast_range = 12;
 		cast_reload_delay = 1;
-		cast_sub_animation = 1;
-		requires_line_of_sight = true;
-		speed_bias = 1;
-		usage_context_flags = uc_offensive;
-
-		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_terrain | tt_breakable;
 	}
 	[spell_instant_hit] {}
 
@@ -39,17 +33,13 @@
 	{
 		gold_value = 20000;
 	}
-	[attack]
-	{
-		damage_min = 0;
-		damage_max = 0;
-	}
 	[magic]
 	{
 		required_level = 32;
 		max_level = 52;
-		mana_cost = 0;
+
 		mana_cost_modifier = #magic * 0.8;
+
 		attack_damage_modifier_min = (#magic * 3.1) * 0.9;
 		attack_damage_modifier_max = (#magic * 3.1) * 1.1;
 	}
