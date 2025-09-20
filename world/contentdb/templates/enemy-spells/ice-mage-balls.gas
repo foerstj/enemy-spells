@@ -16,8 +16,13 @@
 			}
 			[*]
 			{
+				condition* = receive_world_message("we_req_cast_charge");
+				action* = call_sfx_script("ice_mage_balls_player_charge");
+			}
+			[*]
+			{
 				condition* = receive_world_message("we_req_cast");
-				action* = call_sfx_script("ice_mage_balls");
+				action* = call_sfx_script("ice_mage_balls_player");
 			}
 		}
 	}

@@ -19,6 +19,7 @@ set title=%mod_cs%
 :: Compile resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S
+robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /S %mod%-*.gas
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%mod_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
