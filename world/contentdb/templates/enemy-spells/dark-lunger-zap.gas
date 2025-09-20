@@ -11,13 +11,13 @@
 		{
 			[*]
 			{
-				action* = call_sfx_script( "nature_spell_sparkle" );
 				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("nature_spell_sparkle");
 			}
 			[*]
 			{
-				action* = call_sfx_script("dark_lunger_zap");
 				condition* = receive_world_message("we_req_cast");
+				action* = call_sfx_script("dark_lunger_zap");
 			}
 		}
 	}

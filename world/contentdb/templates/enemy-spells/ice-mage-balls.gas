@@ -11,13 +11,13 @@
 		{
 			[*]
 			{
-				action* = call_sfx_script( "nature_spell_sparkle" );
 				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("nature_spell_sparkle");
 			}
 			[*]
 			{
-				action* = call_sfx_script( "ice_mage_balls" );
 				condition* = receive_world_message("we_req_cast");
+				action* = call_sfx_script("ice_mage_balls");
 			}
 		}
 	}
@@ -26,7 +26,7 @@
 		cast_range = 12;
 		cast_reload_delay = 1;
 	}
-	[spell_default] { }
+	[spell_default] {}
 
 	// Balancing roughly based on spell_shock_wave
 	[aspect]

@@ -23,8 +23,8 @@
 		{
 			[*]
 			{
-				action* = call_sfx_script( "nature_spell_sparkle" );
 				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("nature_spell_sparkle");
 			}
 		}
 	}
@@ -54,8 +54,8 @@
 		{
 			[*]
 			{
-				action* = call_sfx_script( "combat_spell_sparkle" );
 				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("combat_spell_sparkle");
 			}
 		}
 	}
