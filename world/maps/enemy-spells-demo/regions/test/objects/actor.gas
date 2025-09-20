@@ -6,7 +6,43 @@
 	}
 	[placement]
 	{
+	  q orientation = 0,1.66939e-007,0,1;
+	  p position = 0.310664,0,-3.29348,0x33199f5d;
+	}
+}
+[t:dark_caster,n:0x00300002]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
 	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -0.119642,0,0.0960426,0x3d48d951;
+	  p position = -0.447098,0,-1.30799,0x3d48d951;
+	}
+}
+[t:swamp_witch,n:0x00300003]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.420952,0,2.46806,0x3d48d951;
+	}
+}
+[t:sand_mage,n:0x00300004]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.802044,3.8147e-006,-1.72684,0xff719f88;
 	}
 }

@@ -1,4 +1,7 @@
 [streamer_node_content_index]
 {
-  x 0x3d48d951 = 0x00300000;
+  x 0x33199f5d = 0x00300000;
+  x 0x3d48d951 = 0x00300002;
+  x 0x3d48d951 = 0x00300003;
+  x 0xff719f88 = 0x00300004;
 }
