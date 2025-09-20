@@ -34,7 +34,6 @@
 	}
 	[spell_instant_hit] {}
 
-	// Balancing roughly based on spell_lightning_blast
 	[aspect]
 	{
 		gold_value = 33000;
@@ -44,9 +43,9 @@
 		required_level = 32;
 		max_level = 52;
 
-		mana_cost_modifier = #magic * 0.8;
+		mana_cost_modifier = #magic * 1.5;
 
-		attack_damage_modifier_min = (#magic * 3.1) * 0.9;
-		attack_damage_modifier_max = (#magic * 3.1) * 1.1;
+		attack_damage_modifier_min = (#magic * 2.5) * 0.9;
+		attack_damage_modifier_max = (#magic * 2.5) * 1.1;
 	}
 }

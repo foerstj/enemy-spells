@@ -25,7 +25,6 @@
 		particle_fit = 0.2;
 	}
 
-	// Balancing roughly based on spell_inferno
 	[aspect]
 	{
 		gold_value = 130000;
@@ -35,9 +34,9 @@
 		required_level = 62;
 		max_level = 82;
 
-		mana_cost_modifier = #magic * 3.6;
+		mana_cost_modifier = #magic * 3.0;
 
-		attack_damage_modifier_min = (#magic * 4.5) * 0.9;
-		attack_damage_modifier_max = (#magic * 4.5) * 1.1;
+		attack_damage_modifier_min = (#magic * 4.0) * 0.9;
+		attack_damage_modifier_max = (#magic * 4.0) * 1.1;
 	}
 }
