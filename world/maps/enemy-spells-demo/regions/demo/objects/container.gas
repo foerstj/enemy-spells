@@ -2,16 +2,16 @@
 {
 	[common]
 	{
-		screen_name = "Monster Spells visible v0.1";
+		screen_name = "Monster Spells v0.1";
 	}
 	[inventory]
 	{
 		[other]
 		{
-			il_main = spell_braak_iceblast_visible;
-			il_main = spell_dark_lunger_zap_visible;
-			il_main = spell_ice_mage_balls_visible;
-			il_main = spell_sand_mage_blast_visible;
+			il_main = spell_braak_iceblast_demo;
+			il_main = spell_dark_lunger_zap_demo;
+			il_main = spell_ice_mage_balls_demo;
+			il_main = spell_sand_mage_blast_demo;
 		}
 	}
 	[placement]

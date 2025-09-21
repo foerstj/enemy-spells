@@ -32,8 +32,9 @@
 	[spell_default] { }
 }
 
-[t:template,n:spell_ice_mage_balls_visible]
+[t:template,n:spell_ice_mage_balls_demo]
 {
 	specializes = spell_ice_mage_balls_base;
 	aspect:is_visible = true;
+	common:screen_name = "ice mage balls";
 }
