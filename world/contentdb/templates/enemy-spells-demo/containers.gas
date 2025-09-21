@@ -21,6 +21,33 @@
 	}
 }
 
+[t:template,n:es_barrel_player_spells_new]
+{
+	specializes = barrel_glb_floating_03_base;
+
+	[common]
+	{
+		screen_name = "Player Spells NEW";
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_ghost_sap_player;
+			il_main = spell_kell_blast_player;
+			il_main = spell_kell_bolt_player;
+			il_main = spell_kell_shot_player;
+			il_main = spell_lava_imp_ball_player;
+			il_main = spell_lava_imp_bullets_player;
+			il_main = spell_maljin_ball_01_player;
+			il_main = spell_maljin_ball_02_player;
+			il_main = spell_maljin_ball_03_player;
+			il_main = spell_wraith_hands_player;
+			il_main = spell_wraith_zap_player;
+		}
+	}
+}
+
 [t:template,n:es_barrel_demo_spells_new]
 {
 	specializes = barrel_glb_floating_03_base;

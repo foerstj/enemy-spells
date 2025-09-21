@@ -1,0 +1,55 @@
+[t:template,n:spell_maljin_ball_03_player]
+{
+	specializes = base_spell_enemy_spells_combat_magic;
+
+	doc = "spell maljin ball 03 (player)";
+	[common]
+	{
+		screen_name = "Sting Flurry";
+		description = "Spell of the Maljin Phantom.";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("combat_spell_sparkle");
+			}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast_charge");
+				action* = call_sfx_script("maljin_charge_03");
+			}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast");
+				action* = call_sfx_script("maljin_ball_03");
+			}
+		}
+	}
+	[gui]
+	{
+		active_icon		= b_gui_ig_i_ic_sp_es-maljin_ball_03;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-maljin_ball_03-inv;
+	}
+	[magic]
+	{
+		cast_range = 10;
+		cast_reload_delay = 0;
+	}
+	[spell_instant_hit] {}
+
+	[aspect]
+	{
+		gold_value = 290000;
+	}
+	[magic]
+	{
+		required_level = 79;
+		max_level = 99;
+
+		mana_cost_modifier = (#magic*2) * 2.0;
+
+		attack_damage_modifier_min = ((#magic*3) * 1.6) * 0.9;
+		attack_damage_modifier_max = ((#magic*3) * 1.6) * 1.1;
+	}
+}
