@@ -33,4 +33,5 @@ Required level is a bit higher than the typical encounter level of the respectiv
 
 ## Attribution
 
-The names of the spells are taken from the Sybex Guide.
+- Some of the icons are made by Eksevis.
+- The names of the spells are taken from the Sybex Guide.
