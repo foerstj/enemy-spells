@@ -3,10 +3,10 @@
 Adding variants of enemy spells for the player to use.
 
 Spells:
-- "Frost Shot" - spell of the Braak Mage
-- "Arc" - spell of the Dark Caster
-- "Spiral Freeze" - spell of the Swamp Witch
-- "Searing Blast" - spell of the Sand Mage
+- "Frost Shot" (spell of the Braak Mage) for NM level 20
+- "Arc" (spell of the Dark Caster) for NM level 32
+- "Spiral Freeze" (spell of the Swamp Witch) for NM level 40
+- "Searing Blast" (spell of the Sand Mage) for CM level 62
 
 ## Installation
 
