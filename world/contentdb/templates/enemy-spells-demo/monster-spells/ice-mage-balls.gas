@@ -36,5 +36,5 @@
 {
 	specializes = spell_ice_mage_balls_base;
 	aspect:is_visible = true;
-	common:screen_name = "ice mage balls";
+	common:screen_name = "ice_mage_balls";
 }

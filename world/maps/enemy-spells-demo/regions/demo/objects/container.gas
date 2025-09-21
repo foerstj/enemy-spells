@@ -1,40 +1,12 @@
-[t:barrel_glb_floating_03,n:0x00100002]
+[t:es_barrel_demo_spells,n:0x00100002]
 {
-	[common]
-	{
-		screen_name = "Monster Spells v0.1";
-	}
-	[inventory]
-	{
-		[other]
-		{
-			il_main = spell_braak_iceblast_demo;
-			il_main = spell_dark_lunger_zap_demo;
-			il_main = spell_ice_mage_balls_demo;
-			il_main = spell_sand_mage_blast_demo;
-		}
-	}
 	[placement]
 	{
 	  p position = 0.265977,0,-0.682588,0xb8c51b9e;
 	}
 }
-[t:barrel_glb_floating_03,n:0x00100007]
+[t:es_barrel_player_spells,n:0x00100007]
 {
-	[common]
-	{
-		screen_name = "Player Spells v0.1";
-	}
-	[inventory]
-	{
-		[other]
-		{
-			il_main = spell_dark_lunger_zap_player;
-			il_main = spell_ice_mage_balls_player;
-			il_main = spell_sand_mage_blast_player;
-			il_main = spell_braak_iceblast_player;
-		}
-	}
 	[placement]
 	{
 	  p position = 0.116657,0,-2.00125,0xb8c51b9e;

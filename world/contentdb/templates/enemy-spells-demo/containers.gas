@@ -1,0 +1,62 @@
+[t:template,n:barrel_glb_floating_03_base]  // = barrel_glb_floating_03
+{
+	specializes		= base_container_barrel;
+	doc				= "barrel_floating_vertical";
+	category_name	= "container";
+
+	aspect:model		= m_i_glb_barrel-03;
+	aspect:textures:0	= b_i_glb_barrel;
+	[body]
+	{
+		initial_chore =	chore_default;
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_glb;
+			[chore_default]
+			{
+				skrit =	infinite_loop;
+				[anim_files] { 00=barrel-03-float; }
+			}
+		}
+	}
+}
+
+[t:template,n:es_barrel_player_spells]
+{
+	specializes = barrel_glb_floating_03_base;
+
+	[common]
+	{
+		screen_name = "Player Spells";
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_dark_lunger_zap_player;
+			il_main = spell_ice_mage_balls_player;
+			il_main = spell_sand_mage_blast_player;
+			il_main = spell_braak_iceblast_player;
+		}
+	}
+}
+
+[t:template,n:es_barrel_demo_spells]
+{
+	specializes = barrel_glb_floating_03_base;
+
+	[common]
+	{
+		screen_name = "Monster Spells";
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_braak_iceblast_demo;
+			il_main = spell_dark_lunger_zap_demo;
+			il_main = spell_ice_mage_balls_demo;
+			il_main = spell_sand_mage_blast_demo;
+		}
+	}
+}

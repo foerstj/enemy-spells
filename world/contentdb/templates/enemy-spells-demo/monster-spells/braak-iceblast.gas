@@ -37,5 +37,5 @@
 {
 	specializes = spell_braak_iceblast_base;
 	aspect:is_visible = true;
-	common:screen_name = "braak iceblast";
+	common:screen_name = "braak_iceblast";
 }

@@ -30,5 +30,5 @@
 {
 	specializes = spell_sand_mage_blast_base;
 	aspect:is_visible = true;
-	common:screen_name = "sand mage blast";
+	common:screen_name = "sand_mage_blast";
 }
