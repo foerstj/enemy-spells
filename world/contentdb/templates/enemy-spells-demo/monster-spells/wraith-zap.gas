@@ -1,0 +1,46 @@
+[t:template,n:spell_wraith_zap_base]  // = spell_wraith_zap
+{
+	category_name = "magic";
+	doc = "spell wratih zap";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		damage_max = 200;
+		damage_min = 180;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("wraith_zap");
+				condition* = receive_world_message("we_req_cast");
+			}
+			[*]
+			{
+				action* = call_sfx_script("wraith_zap_charge");
+				condition* = receive_world_message("we_req_cast_charge");
+			}
+		}
+	}
+	[magic]
+	{
+		cast_range = 14;
+		cast_reload_delay = 1;
+		mana_cost = 0;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+		cast_sub_animation = 1;
+	}
+	[spell_instant_hit] {}
+}
+
+[t:template,n:spell_wraith_zap_demo]
+{
+	specializes = spell_wraith_zap_base;
+	aspect:is_visible = true;
+	common:screen_name = "wraith_zap";
+}

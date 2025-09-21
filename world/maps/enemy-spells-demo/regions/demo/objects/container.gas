@@ -2,13 +2,20 @@
 {
 	[placement]
 	{
-	  p position = 0.265977,0,-0.682588,0xb8c51b9e;
+	  p position = 0.949461,0,1.02159,0xb8c51b9e;
+	}
+}
+[t:es_barrel_demo_spells_new,n:0x00100003]
+{
+	[placement]
+	{
+	  p position = -0.599408,0,0.742274,0xb8c51b9e;
 	}
 }
 [t:es_barrel_player_spells,n:0x00100007]
 {
 	[placement]
 	{
-	  p position = 0.116657,0,-2.00125,0xb8c51b9e;
+	  p position = 0.800141,0,-0.297072,0xb8c51b9e;
 	}
 }
