@@ -1,0 +1,21 @@
+[t:barrel_glb_floating_03,n:0x00100007]
+{
+	[common]
+	{
+		screen_name = "Player Spells v0.1";
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_braak_iceblast_player;
+			il_main = spell_sand_mage_blast_player;
+			il_main = spell_ice_mage_balls_player;
+			il_main = spell_dark_lunger_zap_player;
+		}
+	}
+	[placement]
+	{
+	  p position = 0.116657,0,-2.00125,0xb8c51b9e;
+	}
+}
