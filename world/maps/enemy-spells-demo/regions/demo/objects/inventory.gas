@@ -1,9 +1,9 @@
-[t:shovel,n:0x00100001]
+[t:st_g_c_r_avg,n:0x00100001]
 {
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 0,0,1.83272,0x87bfd221;
+	  p position = 0.00936492,0,1.84378,0x87bfd221;
 	}
 }
 [t:spell_dark_lunger_zap_player,n:0x00100002]
