@@ -1,5 +1,6 @@
 [streamer_node_content_index]
 {
   x 0x87bfd221 = 0x00100001;
+  x 0xb8c51b9e = 0x00100002;
   x 0xb8c51b9e = 0x00100007;
 }
