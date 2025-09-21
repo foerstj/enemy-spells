@@ -1,0 +1,14 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000004;
+	source_region_name = screenshots;
+	[t:stitch_editor,n:demo]
+	{
+		dest_region = demo;
+		[node_ids]
+		{
+			0x01040001 = 0x3DB5035F,7;
+			0x01040002 = 0x3DB5035F,8;
+		}
+	}
+}
