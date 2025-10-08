@@ -5,7 +5,7 @@
 	doc = "spell dsx hassat shaman fireshot (player)";
 	[common]
 	{
-		screen_name = "Feline Blow";
+		screen_name = "Feline Flash";
 		description = "Spell of the Hassat Shaman.";
 		[template_triggers]
 		{

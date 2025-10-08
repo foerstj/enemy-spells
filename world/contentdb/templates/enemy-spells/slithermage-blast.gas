@@ -5,7 +5,7 @@
 	doc = "spell dsx slithermage blast (player)";
 	[common]
 	{
-		screen_name = "Zigzag";
+		screen_name = "Comet Blow";
 		description = "Spell of the Slithermage.";
 		[template_triggers]
 		{
