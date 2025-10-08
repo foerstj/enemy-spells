@@ -1,0 +1,50 @@
+[t:template,n:dsx_spell_noctiss_sap_player]
+{
+	specializes = base_spell_enemy_spells_combat_magic;
+
+	doc = "dsx Spell Noctiss sap (player)";
+	[common]
+	{
+		screen_name = "Frazzle";
+		description = "Spell of the Noctiss.";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("combat_spell_sparkle");
+			}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast");
+				action* = call_sfx_script("noctiss_sap");
+			}
+		}
+	}
+	[gui]
+	{
+		active_icon		= b_gui_ig_i_ic_sp_es-noctiss_sap;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-noctiss_sap-inv;
+	}
+	[magic]
+	{
+		cast_range = 14;
+		cast_reload_delay = 0.35;
+	}
+	[spell_instant_hit] { }
+
+	[aspect]
+	{
+		gold_value = 38000;
+	}
+	[magic]
+	{
+		required_level = 35;
+		max_level = 55;
+
+		mana_cost_modifier = (#magic*2) * 0.7;
+
+		attack_damage_modifier_min = ((#magic*3) * 0.6) * 0.9;
+		attack_damage_modifier_max = ((#magic*3) * 0.6) * 1.1;
+	}
+}

@@ -1,0 +1,50 @@
+[t:template,n:dsx_spell_rune_caster_damage_player]
+{
+	specializes = base_spell_enemy_spells_combat_magic;
+
+	doc = "dsx Spell Rune Caster Damage (player)";
+	[common]
+	{
+		screen_name = "Runic Twist";
+		description = "Spell of the Rune Caster.";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("combat_spell_sparkle");
+			}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast");
+				action* = call_sfx_script( "rune_caster_snakes" );
+			}
+		}
+	}
+	[gui]
+	{
+		active_icon		= b_gui_ig_i_ic_sp_es-rune_caster_damage;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-rune_caster_damage-inv;
+	}
+	[magic]
+	{
+		cast_range = 12;
+		cast_reload_delay = 1;
+	}
+	[spell_instant_hit] { }
+
+	[aspect]
+	{
+		gold_value = 36000;
+	}
+	[magic]
+	{
+		required_level = 34;
+		max_level = 54;
+
+		mana_cost_modifier = (#magic*2) * 1.0;
+
+		attack_damage_modifier_min = ((#magic*3) * 0.8) * 0.9;
+		attack_damage_modifier_max = ((#magic*3) * 0.8) * 1.1;
+	}
+}
