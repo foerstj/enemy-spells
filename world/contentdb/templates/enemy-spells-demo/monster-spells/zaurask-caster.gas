@@ -1,0 +1,40 @@
+[t:template,n:dsx_spell_zaurask_caster_base]  // = dsx_spell_zaurask_caster
+{
+	category_name = "magic";
+	doc = "dsx_spell_zaurask_caster";
+	specializes = dsx_spell_fireshot;
+	[attack]
+	{
+		damage_max = 95;
+		damage_min = 76;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("zaurask_caster_spell");
+				condition* = receive_world_message("we_req_cast");
+			}
+			[*]
+			{
+				action* = call_sfx_script( "zaurask_caster_charge_one_hand" );
+				condition* = receive_world_message("we_req_cast_charge");
+			}
+		}
+	}
+	magic:cast_sub_animation = 1;
+	[magic]
+	{
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+}
+
+[t:template,n:dsx_spell_zaurask_caster_demo]
+{
+	specializes = dsx_spell_zaurask_caster_base;
+	aspect:is_visible = true;
+	common:screen_name = "zaurask_caster";
+}

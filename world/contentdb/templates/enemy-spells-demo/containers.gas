@@ -49,6 +49,12 @@
 	{
 		[other]
 		{
+			il_main = dsx_spell_hassat_shaman_fireshot_demo;
+			il_main = dsx_spell_rune_fiend_blast_demo;
+			il_main = dsx_spell_slithermage_blast_demo;
+			il_main = dsx_spell_rune_caster_damage_demo;
+			il_main = dsx_spell_noctiss_sap_demo;
+			il_main = dsx_spell_zaurask_caster_demo;
 		}
 	}
 }

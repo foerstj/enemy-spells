@@ -1,0 +1,41 @@
+[t:template,n:dsx_spell_hassat_shaman_fireshot_base]  // = dsx_spell_hassat_shaman_fireshot
+{
+	category_name = "magic";
+	doc = "spell dsx hassat shaman fireshot";
+	specializes = dsx_spell_fireshot;
+	
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("hassat_caster_spell");
+				condition* = receive_world_message("we_req_cast");
+			}
+			[*]
+			{
+				action* = call_sfx_script( "hassat_caster_charge_one_hand" );
+				condition* = receive_world_message("we_req_cast_charge");
+			}
+		}			
+	}
+
+	[attack]
+	{
+		damage_max = 45;
+		damage_min = 35;
+	}
+	[magic]
+	{
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+}
+
+[t:template,n:dsx_spell_hassat_shaman_fireshot_demo]
+{
+	specializes = dsx_spell_hassat_shaman_fireshot_base;
+	aspect:is_visible = true;
+	common:screen_name = "hassat_shaman_fireshot";
+}

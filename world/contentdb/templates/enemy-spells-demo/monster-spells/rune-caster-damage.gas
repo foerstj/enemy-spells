@@ -1,0 +1,44 @@
+[t:template,n:dsx_spell_rune_caster_damage_base]  // = dsx_spell_rune_caster_damage
+{
+	category_name = "magic";
+	doc = "dsx Spell Rune Caster Damage";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		 damage_max = 50;
+		 damage_min = 44;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "rune_caster_snakes" );
+				condition* = receive_world_message("we_req_cast");
+			}
+		}
+	}
+
+	[magic]
+	{
+		cast_range = 12;
+		cast_reload_delay = 1;
+		mana_cost = 0;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+
+	[spell_instant_hit] { }
+}
+
+[t:template,n:dsx_spell_rune_caster_damage_demo]
+{
+	specializes = dsx_spell_rune_caster_damage_base;
+	aspect:is_visible = true;
+	common:screen_name = "rune_caster_damage";
+}
