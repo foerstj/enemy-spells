@@ -17,6 +17,54 @@
 	  p position = 2.76976,3.8147e-006,0.317884,0x2e87c691;
 	}
 }
+[t:dsx_hassat_shaman,n:0x0030000c]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 3.31668,-1.90735e-006,2.17687,0xff719f88;
+	}
+}
+[t:dsx_rune_guardian_r,n:0x0030000d]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.81503,0,2.40013,0xff719f88;
+	}
+}
+[t:dsx_slithermage_ranged,n:0x0030000e]
+{
+	[placement]
+	{
+	  q orientation = 0,-1,0,4.17421e-007;
+	  p position = 0.487381,0,2.23591,0xff719f88;
+	}
+}
+[t:dsx_rune_caster,n:0x0030000f]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -1.05604,0,2.56632,0xff719f88;
+	}
+}
+[t:dsx_noctiss,n:0x00300010]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -2.24974,0,2.34467,0xff719f88;
+	}
+}
+[t:dsx_zaurask_caster,n:0x00300011]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -3.3778,0,2.45523,0xff719f88;
+	}
+}
 [t:warlock,n:0x00300007]
 {
 	[placement]
