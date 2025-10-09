@@ -23,6 +23,7 @@
 			{
 				condition* = receive_world_message("we_req_cast");
 				action* = call_sfx_script("rune_caster_snakes_player");
+				action* = play_sound("s_e_attack_rune_caster");
 			}
 		}
 	}
