@@ -3,9 +3,16 @@
 Adding variants of enemy spells for the player to use.
 
 Spells:
+- "Feline Flash" (spell of the Hassat Shaman) for NM level 19
 - "Frost Shot" (spell of the Braak Mage) for NM level 20
+- "Ice Strangle" (spell of the Ice Mage) for NM level 24
 - "Arc" (spell of the Dark Caster) for NM level 32
+- "Runic Strike" (spell of the Rune Fiend) for CM level 34
+- "Runic Twist" (spell of the Rune Caster) for CM level 34
+- "Frazzle" (spell of the Noctiss) for CM level 35
+- "Lizard Lash" (spell of the Zaurask Seer) for NM level 38
 - "Spiral Freeze" (spell of the Swamp Witch) for NM level 40
+- "Comet Blow" (spell of the Slithermage) for CM level 42
 - "Crimson Streak" (spell of the Wraith Mage) for CM level 59
 - "Searing Blast" (spell of the Sand Mage) for CM level 62
 - "Spirit Sap" (spell of the Ghost) for CM level 70
@@ -34,4 +41,4 @@ Required level is a bit higher than the typical encounter level of the respectiv
 ## Attribution
 
 - Some of the icons are made by Eksevis.
-- The names of the spells are taken from the Sybex Guide.
+- The names of the Vanilla spells are taken from the Sybex Guide.
