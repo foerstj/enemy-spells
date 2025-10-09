@@ -16,12 +16,21 @@ set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 set title=%mod_cs%
 
-:: Compile resource file
+:: Compile Vanilla resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *.psd
-robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S
-robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /S %mod%-*.gas
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\Resources\%mod_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S base*
+robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S *-v-*
+robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /S %mod%-v-*.gas
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\Resources\%mod_cs% - Vanilla Attacks.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+if %errorlevel% neq 0 pause
+:: Compile LoA resource file
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *.psd
+robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S base*
+robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" /S *-loa-*
+robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /S %mod%-loa-*.gas
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\Resources\%mod_cs% - LoA Attacks.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile demo map file
