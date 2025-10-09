@@ -1,0 +1,209 @@
+[effect_script*]
+{
+	name = rune_caster_snakes_player;
+
+	script = [[
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #SOURCE
+			"must_update()color0(.3,.2,1)hp0(.2,.2,0)hp1(-.2,-.2,0)spin(26)dur(1.5)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(1)";
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx start #POP;
+
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #SOURCE
+			"must_update()color0(.3,.2,1)hp0(.2,.2,0)hp1(-.2,-.2,0)spin(26)dur(1.5)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(1)";
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx start #POP;
+
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #SOURCE
+			"must_update()color0(.3,.2,1)hp0(.2,.2,0)hp1(-.2,-.2,0)spin(26)dur(1.5)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(1)";
+		sfx attach_point #PEEK @shield_bone target;
+		sfx start #POP;
+		
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #SOURCE
+			"must_update()color0(.3,.2,1)hp0(.2,.2,0)hp1(-.2,-.2,0)spin(26)dur(1.5)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(1)";
+		sfx attach_point #PEEK @shield_bone target;
+		sfx start #POP;
+
+		pause 1;
+
+		sfx create curve #SOURCE 
+			"must_update()color0(0.3,0.2,1)tlength(8)model(0)ts(1.8)";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+					
+		sfx create curve #SOURCE 
+			"delay(.05)must_update()color0(0.3,0.2,1)tlength(8)model(0)ts(1.7)";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK @shield_bone target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+					
+		sfx create curve #SOURCE 
+			"delay(.1)must_update()color0(0.3,0.2,1)tlength(8)model(0)ts(1.6)";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+					
+		sfx create curve #SOURCE 
+			"delay(.15)must_update()color0(0.3,0.2,1)tlength(8)model(0)ts(1.5)";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK @shield_bone target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+					
+		sfx create curve #SOURCE 
+			"delay(.2)must_update()color0(0.3,0.2,1)tlength(8)model(0)ts(1.4)";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+					
+		pause .2;
+
+		sfx create explosion #TARGET_KB
+			"count(20)ts(.33)color0(0.4,0.3,1)radius(0)vmin(1)vmax(7)
+			omni_dir()dur(1.2)scale(.66)fade_range(1,1,0)fade_range(2,2,0)";
+		sfx start #POP;
+
+		sfx create explosion #TARGET_KB
+			"count(20)ts(.33)color0(0.4,0.3,1)radius(0)vmin(1)vmax(7)fade_range(2,2,0)
+			omni_dir()dur(1.2)scale(.66)fade_range(1,1,0)texture(b_sfx_sparkle01)";
+		sfx start #POP;	
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		pause .05;
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		pause .05;
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		pause .05;
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		pause .05;
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		pause .05;
+
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange -.3 .3;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 50 80;
+		frandrange 0 360;
+		frandrange 0 360;
+		frandrange 0 360;
+		sfx create cylinder #TARGET_KB
+			"must_update()color0(.3,.2,1)hp0(.1,.1,0)hp1(-.1,-.1,0)spin(16)dur(1.3)
+			texture(b_sfx_sparkle01)bone_orient()rotate(#POP,#POP,#POP)alpha(1)
+			irotate(#POP,#POP,#POP)rp0(.3,.3,0)rp1(.3,.3,0)scale(2.5)offset(#POP,#POP,#POP)";
+		sfx start #POP;
+
+		worldmsg WE_SPELL_SYNC_MID #OWNER_GOID #OWNER_GOID #TARGET_GOID;
+	]];
+}
