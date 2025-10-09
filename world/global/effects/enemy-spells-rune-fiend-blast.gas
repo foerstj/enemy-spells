@@ -1,0 +1,12 @@
+// Based on rune_fiend_blast_charge but longer duration to bridge visual gap
+[effect_script*]
+{
+	name = rune_fiend_blast_player_charge;
+
+	script = [[
+		sfx create fire #TARGET
+			"dur(0.35)ts(12)velocity(0,0,0)accel(0,0,0)color0(1,0.2,0.4)count(60)alphafade(1.5)max_displace(0)max_radius(2)";
+		sfx attach_point #PEEK @weapon_bone target;
+		sfx start #POP;
+	]];
+}

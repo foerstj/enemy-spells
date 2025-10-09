@@ -17,7 +17,7 @@
 			[*]
 			{
 				condition* = receive_world_message("we_req_cast_charge");
-				action* = call_sfx_script( "rune_fiend_blast_charge" );
+				action* = call_sfx_script( "rune_fiend_blast_player_charge" );
 			}
 			[*]
 			{
