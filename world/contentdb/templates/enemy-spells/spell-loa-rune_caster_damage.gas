@@ -29,8 +29,8 @@
 	}
 	[gui]
 	{
-		active_icon		= b_gui_ig_i_ic_sp_es-rune_caster_damage;
-		inventory_icon	= b_gui_ig_i_ic_sp_es-rune_caster_damage-inv;
+		active_icon		= b_gui_ig_i_ic_sp_es-loa-rune_caster_damage;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-loa-rune_caster_damage-inv;
 	}
 	[magic]
 	{

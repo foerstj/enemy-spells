@@ -23,8 +23,8 @@
 	}
 	[gui]
 	{
-		active_icon		= b_gui_ig_i_ic_sp_es-noctiss_sap;
-		inventory_icon	= b_gui_ig_i_ic_sp_es-noctiss_sap-inv;
+		active_icon		= b_gui_ig_i_ic_sp_es-loa-noctiss_sap;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-loa-noctiss_sap-inv;
 	}
 	[magic]
 	{
