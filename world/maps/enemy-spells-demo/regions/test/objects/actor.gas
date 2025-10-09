@@ -65,6 +65,14 @@
 	  p position = -3.3778,0,2.45523,0xff719f88;
 	}
 }
+[t:ice_mage,n:0x00300012]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.133544,-9.53674e-007,0.131067,0xff719f88;
+	}
+}
 [t:warlock,n:0x00300007]
 {
 	[placement]

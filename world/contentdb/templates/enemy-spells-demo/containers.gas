@@ -61,6 +61,7 @@
 			il_main = dsx_spell_rune_caster_damage_demo;
 			il_main = dsx_spell_noctiss_sap_demo;
 			il_main = dsx_spell_zaurask_caster_demo;
+			il_main = spell_ice_mage_iceblast_demo;
 		}
 	}
 }
