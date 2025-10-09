@@ -39,6 +39,7 @@
 			il_main = dsx_spell_rune_caster_damage_player;
 			il_main = dsx_spell_noctiss_sap_player;
 			il_main = dsx_spell_zaurask_caster_player;
+			il_main = spell_ice_mage_iceblast_player;
 		}
 	}
 }
