@@ -32,9 +32,9 @@ LoA Attacks:
 
 ## Installation
 
-This mod does not require LoA, but is compatible with it.
+This mod is split for different DS versions (Vanilla vs. LoA). The "Vanilla Attacks" work with both versions, the "LoA Attacks" work only with LoA.
 
-To install, put the Enemy Spells.dsres in your Resources or DSLOA folder.
+To install, put the .dsres file(s) in your Resources resp. DSLOA folder.
 
 ## Balancing
 
