@@ -23,8 +23,8 @@
 	}
 	[gui]
 	{
-		active_icon		= b_gui_ig_i_ic_sp_es-kell_shot;
-		inventory_icon	= b_gui_ig_i_ic_sp_es-kell_shot-inv;
+		active_icon		= b_gui_ig_i_ic_sp_es-v-kell_shot;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-v-kell_shot-inv;
 	}
 	[magic]
 	{

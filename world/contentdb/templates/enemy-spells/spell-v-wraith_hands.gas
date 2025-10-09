@@ -23,8 +23,8 @@
 	}
 	[gui]
 	{
-		active_icon		= b_gui_ig_i_ic_sp_es-wraith_hands;
-		inventory_icon	= b_gui_ig_i_ic_sp_es-wraith_hands-inv;
+		active_icon		= b_gui_ig_i_ic_sp_es-v-wraith_hands;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-v-wraith_hands-inv;
 	}
 	[magic]
 	{
