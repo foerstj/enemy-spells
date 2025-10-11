@@ -132,3 +132,28 @@
 		}
 	}
 }
+
+[t:template,n:es_barrel_misc]
+{
+	specializes = barrel_glb_floating_03_base;
+
+	[common]
+	{
+		screen_name = "Miscellaneous";
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = #spellbook/+cold; // ice spells +dmg
+			il_main = #spellbook/+fiery; // fire spells +dmg
+			il_main = #spellbook/+shimmering; // electric spells +dmg
+			//il_main = #spellbook/+ofthechill; // ice spells -cost
+			//il_main = #spellbook/+oftheflame; // fire spells -cost
+			//il_main = #spellbook/+ofstatic; // electric spells -cost
+			il_main = spellbook_dsx_set_illicor; // nature spells +dmg
+			il_main = spellbook_dsx_set_demlock; // combat spells +dmg
+			//il_main = spellbook_dsx_set_adela; // area-effect spells -cost, combat spells +dmg
+		}
+	}
+}

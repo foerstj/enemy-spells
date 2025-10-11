@@ -26,3 +26,10 @@
 	  p position = 1,0,-1,0xb8c51b9e;
 	}
 }
+[t:es_barrel_misc,n:0x00100006]
+{
+	[placement]
+	{
+	  p position = 0.0827656,1.90735e-006,-2.56634,0xf993c993;
+	}
+}
