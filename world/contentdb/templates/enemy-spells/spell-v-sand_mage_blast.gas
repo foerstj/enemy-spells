@@ -7,6 +7,7 @@
 	{
 		screen_name = "Searing Blast";
 		description = "Spell of the Sand Mage.";
+		membership = spells_combat, spells_fire;
 	}
 	[gui]
 	{

@@ -19,6 +19,7 @@
 	}
 	[common]
 	{
+		membership = spells_nature;
 		[template_triggers]
 		{
 			[*]
@@ -50,6 +51,7 @@
 	}
 	[common]
 	{
+		membership = spells_combat;
 		[template_triggers]
 		{
 			[*]

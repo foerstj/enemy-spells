@@ -7,6 +7,7 @@
 	{
 		screen_name = "Frost Shot";
 		description = "Spell of the Braak Mage.";
+		membership = spells_nature, spells_ice;
 		[template_triggers]
 		{
 			[*]
