@@ -1,0 +1,23 @@
+[t:template,n:base_spell_ice_mage_iceblast_player_impl]
+{
+	specializes = base_spell_ice_mage_iceblast_player;
+
+	[attack]
+	{
+		aiming_error_range_x = 8;
+		aiming_error_range_y = 8;
+		ammo_attach_bone = weapon_grip;
+		ammo_template = ice_shard_03;
+		use_aiming_error = true;
+	}
+	[physics]
+	{
+		velocity = 16;
+	}
+	[spell_launch]
+	{
+		launch_freq_min = .25;
+		launch_freq_max = .25;
+		number = 5;
+	}
+}

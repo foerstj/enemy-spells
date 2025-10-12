@@ -15,3 +15,5 @@ maljin_ball_02;Sunset Rage;Maljin Phantom;combat;v;79;290000;1.7;0.5;2;0.5;;10;0
 maljin_ball_03;Sting Flurry;Maljin Phantom;combat;v;79;290000;1.6;0.5;2;0.5;;10;0;instant_hit;maljin_charge_03;maljin_ball_03;;
 wraith_hands;Crimson Streak;Wraith Mage;combat;v;59;110000;1.2;0.5;1;;;13;1;default;;wraith_hands;;
 wraith_zap;Angst;Wraith Warlock;combat;v;75;240000;1.5;;1.7;;electric;14;1;instant_hit;wraith_zap_charge;wraith_zap_player;;
+;;;;;;;;;;;;;;;;;;
+ice_mage_iceblast;Ice Strangle;Ice Mage;nature;v;24;7500;0.8;0.3;0.5;;ice;12;1;;;ice_mage_charge;;x
