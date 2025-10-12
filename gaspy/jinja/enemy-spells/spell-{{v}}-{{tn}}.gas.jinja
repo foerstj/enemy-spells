@@ -1,8 +1,8 @@
-[t:template,n:{% if custom_impl %}base_{% endif %}spell_{{tn}}_player]
+[t:template,n:{% if custom_impl %}base_{% endif %}{% if v == 'loa' %}dsx_{% endif %}spell_{{tn}}_player]
 {
 	specializes = base_spell_enemy_spells_{{mc}}_magic;
 
-	doc = "spell {{tn.replace('_', ' ')}} (player)";
+	doc = "{% if v == 'loa' %}dsx {% endif %}spell {{tn.replace('_', ' ')}} (player)";
 	[common]
 	{
 		screen_name = "{{sn}}";
@@ -71,5 +71,5 @@
 }
 {% if custom_impl %}
 
-[t:template,n:spell_{{tn}}_player] { specializes = base_spell_{{tn}}_player_impl; }
+[t:template,n:{% if v == 'loa' %}dsx_{% endif %}spell_{{tn}}_player] { specializes = base_spell_{{tn}}_player_impl; }
 {% endif %}

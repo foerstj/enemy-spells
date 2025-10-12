@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_combat_magic;
 
-	doc = "dsx Spell Noctiss sap (player)";
+	doc = "dsx spell noctiss sap (player)";
 	[common]
 	{
 		screen_name = "Frazzle";
@@ -31,7 +31,7 @@
 		cast_range = 14;
 		cast_reload_delay = 0.35;
 	}
-	[spell_instant_hit] { }
+	[spell_instant_hit] {}
 
 	[aspect]
 	{
@@ -42,7 +42,7 @@
 		required_level = 35;
 		max_level = 55;
 
-		mana_cost_modifier = ((#magic*2) * 0.7) * 0.65;  // balance factor 0.65 due to quick attack
+		mana_cost_modifier = ((#magic*2) * 0.7) * 0.65;
 
 		attack_damage_modifier_min = (((#magic*3) * 0.6) * 0.65) * 0.9;
 		attack_damage_modifier_max = (((#magic*3) * 0.6) * 0.65) * 1.1;
