@@ -23,7 +23,7 @@
 			[*]
 			{
 				condition* = receive_world_message("we_req_cast");
-				action* = call_sfx_script("wraith_zap");
+				action* = call_sfx_script("wraith_zap_player");
 			}
 		}
 	}

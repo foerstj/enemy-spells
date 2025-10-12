@@ -1,0 +1,32 @@
+// Based on wraith_zap, but using the hands as attach points
+[effect_script*]
+{
+	name = wraith_zap_player;
+
+	script = [[
+		sound play s_e_spell_lightning_blast_cast at #TARGET_POSITION dist 8 35;
+
+		call wraith_zap_base s<bip01_r_finger0> s<1,.75,.5> s<1,.4,.2> f<1.33>;  // originally @weapon_bone
+
+		call wraith_zap_base s<bip01_l_finger0> s<1,.75,.5> s<1,.4,.2> f<1.33>;  // originally @shield_bone
+
+		sfx create explosion #TARGET_KB 
+			"srate(.0001)vmin(20)vmax(40)omni_dir()ts(.15)
+			scale_range(.33,.66,0)texture(b_sfx_sparkle01)color0(1,.35,.15)
+			color1(0,0,0)dur(.35)radius(.1)fade_range(16,16,0)count(30)";
+		sfx start #POP;
+
+		sfx create explosion #TARGET_KB 
+			"vmin(22)vmax(32)omni_dir()ts(.15)
+			scale_range(.33,.66,0)texture(b_sfx_sparkle01)color0(1,.35,.15)
+			color1(0,0,0)dur(.55)radius(.1)fade_range(12,12,0)count(30)";
+		sfx start #POP;
+
+		sfx create fire #TARGET_KB 
+			"velocity(0,-2,0)accel(0,10,0)min_displace(-1.5)max_displace(1.5)
+			dur(.55)scale(1)color0(1,.5,.25)ts(1)count(16)max_radius(6)";
+		sfx start #POP;
+
+		worldmsg WE_SPELL_SYNC_MID #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+	]];
+}
