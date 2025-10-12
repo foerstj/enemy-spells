@@ -1,0 +1,58 @@
+[t:template,n:spell_{{tn}}_player]
+{
+	specializes = base_spell_enemy_spells_{{mc}}_magic;
+
+	doc = "spell {{tn.replace('_', ' ')}} (player)";
+	[common]
+	{
+		screen_name = "{{sn}}";
+		description = "Spell of the {{en}}.";
+		membership = spells_{{mc}}{% if isg %}, spells_{{isg}}{% endif %};
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("we_dropped");
+				action* = call_sfx_script("{{mc}}_spell_sparkle");
+			}
+			{% if cast_effect or cast_sound %}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast");
+				{% if cast_effect %}
+				action* = call_sfx_script("{{cast_effect}}");
+				{% endif %}
+				{% if cast_sound %}
+				action* = play_sound("{{cast_sound}}");
+				{% endif %}
+			}
+			{% endif %}
+		}
+	}
+	[gui]
+	{
+		active_icon		= b_gui_ig_i_ic_sp_es-{{v}}-{{tn}};
+		inventory_icon	= b_gui_ig_i_ic_sp_es-{{v}}-{{tn}}-inv;
+	}
+	[magic]
+	{
+		cast_range = {{cast_range}};
+		cast_reload_delay = {{cast_reload_delay}};
+	}
+	[spell_{{component}}] {}
+
+	[aspect]
+	{
+		gold_value = {{gold}};
+	}
+	[magic]
+	{
+		required_level = {{req_lvl}};
+		max_level = {{ req_lvl + 20 }};
+
+		mana_cost_modifier = (#magic*2) * {{mcm | float}};
+
+		attack_damage_modifier_min = (((#magic*3) * {{adm | float}}) * {{(abf or 1) | float}}) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * {{adm | float}}) * {{(abf or 1) | float}}) * 1.1;
+	}
+}
