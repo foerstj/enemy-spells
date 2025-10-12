@@ -36,6 +36,8 @@ This mod is split for different DS versions (Vanilla vs. LoA). The "Vanilla Atta
 
 To install, put the .dsres file(s) in your Resources resp. DSLOA folder.
 
+The custom spells are recognized by LoA imbued spellbooks if you use the "extended-imbued-spellbook-support" minimod.
+
 ## Balancing
 
 Attack damage, mana cost & gold price are roughly in line with original attack spells.
