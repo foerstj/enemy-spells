@@ -1,4 +1,4 @@
-[t:template,n:{% if base_only %}base_{% endif %}spell_{{tn}}_player]
+[t:template,n:{% if custom_impl %}base_{% endif %}spell_{{tn}}_player]
 {
 	specializes = base_spell_enemy_spells_{{mc}}_magic;
 
@@ -69,3 +69,7 @@
 		attack_damage_modifier_max = (((#magic*3) * {{adm | float}}) * {{(abf or 1) | float}}) * 1.1;
 	}
 }
+{% if custom_impl %}
+
+[t:template,n:spell_{{tn}}_player] { specializes = base_spell_{{tn}}_player_impl; }
+{% endif %}

@@ -1,4 +1,4 @@
-tn;sn;en;mc;v;req_lvl;gold;adm;abf;mcm;isg;cast_range;cast_reload_delay;component;charge_effect;cast_effect;cast_sound;base_only
+tn;sn;en;mc;v;req_lvl;gold;adm;abf;mcm;isg;cast_range;cast_reload_delay;component;charge_effect;cast_effect;cast_sound;custom_impl
 braak_iceblast;Frost Shot;Braak Mage;nature;v;20;3000;0.8;0.5;0.5;ice;12;1;default;;braak_iceblast;s_e_attack_braak_mage;
 dark_lunger_zap;Arc;Dark Caster;nature;v;32;33000;0.8;;0.75;electric;12;1;instant_hit;;dark_lunger_zap;s_e_spell_zap_cast;
 ice_mage_balls;Spiral Freeze;Swamp Witch;nature;v;40;48000;1;;1;;12;1;default;ice_mage_balls_player_charge;ice_mage_balls_player;;
