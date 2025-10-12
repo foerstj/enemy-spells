@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_combat_magic;
 
-	doc = "spell dsx rune fiend blast (player)";
+	doc = "dsx spell rune fiend blast (player)";
 	[common]
 	{
 		screen_name = "Runic Strike";
@@ -17,7 +17,7 @@
 			[*]
 			{
 				condition* = receive_world_message("we_req_cast_charge");
-				action* = call_sfx_script( "rune_fiend_blast_player_charge" );
+				action* = call_sfx_script("rune_fiend_blast_player_charge");
 			}
 			[*]
 			{
@@ -47,9 +47,9 @@
 		required_level = 34;
 		max_level = 54;
 
-		mana_cost_modifier = (#magic*2) * 1.5;
+		mana_cost_modifier = ((#magic*2) * 1.5) * 1.0;
 
-		attack_damage_modifier_min = ((#magic*3) * 1.2) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 1.2) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.2) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.2) * 1.0) * 1.1;
 	}
 }

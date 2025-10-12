@@ -19,3 +19,7 @@ wraith_zap;Angst;Wraith Warlock;combat;v;75;240000;1.5;;1.7;;electric;14;1;insta
 ice_mage_iceblast;Ice Strangle;Ice Mage;nature;v;24;7500;0.8;0.3;0.5;;ice;12;1;;;ice_mage_charge;;x
 hassat_shaman_fireshot;Feline Flash;Hassat Shaman;nature;loa;19;2400;1;;1;;;10;1;default;hassat_caster_charge_one_hand;hassat_caster_spell;;
 noctiss_sap;Frazzle;Noctiss;combat;loa;35;38000;0.6;0.65;0.7;0.65;;14;0.35;instant_hit;;noctiss_sap;;
+rune_caster_damage;Runic Twist;Rune Caster;combat;loa;34;36000;0.8;;1;;;12;1;instant_hit;rune_caster_snakes_player_charge;rune_caster_snakes_player;s_e_attack_rune_caster;
+rune_fiend_blast;Runic Strike;Rune Fiend;combat;loa;34;36000;1.2;;1.5;;;10;1;default;rune_fiend_blast_player_charge;rune_fiend_blast;;
+slithermage_blast;Comet Blow;Slithermage;combat;loa;42;52000;1.5;;1.7;;;10;1;default;;slithermage_blast;;
+zaurask_caster;Lizard Lash;Zaurask Seer;nature;loa;38;43000;1;;1;;;10;1;default;zaurask_caster_charge_one_hand;zaurask_caster_spell;;

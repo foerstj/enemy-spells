@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_combat_magic;
 
-	doc = "spell dsx slithermage blast (player)";
+	doc = "dsx spell slithermage blast (player)";
 	[common]
 	{
 		screen_name = "Comet Blow";
@@ -42,9 +42,9 @@
 		required_level = 42;
 		max_level = 62;
 
-		mana_cost_modifier = (#magic*2) * 1.7;
+		mana_cost_modifier = ((#magic*2) * 1.7) * 1.0;
 
-		attack_damage_modifier_min = ((#magic*3) * 1.5) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 1.5) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.5) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.5) * 1.0) * 1.1;
 	}
 }

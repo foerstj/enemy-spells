@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_combat_magic;
 
-	doc = "dsx Spell Rune Caster Damage (player)";
+	doc = "dsx spell rune caster damage (player)";
 	[common]
 	{
 		screen_name = "Runic Twist";
@@ -37,7 +37,7 @@
 		cast_range = 12;
 		cast_reload_delay = 1;
 	}
-	[spell_instant_hit] { }
+	[spell_instant_hit] {}
 
 	[aspect]
 	{
@@ -48,9 +48,9 @@
 		required_level = 34;
 		max_level = 54;
 
-		mana_cost_modifier = (#magic*2) * 1.0;
+		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 
-		attack_damage_modifier_min = ((#magic*3) * 0.8) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 0.8) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 0.8) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 0.8) * 1.0) * 1.1;
 	}
 }

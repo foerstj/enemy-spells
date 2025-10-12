@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_nature_magic;
 
-	doc = "dsx_spell_zaurask_caster (player)";
+	doc = "dsx spell zaurask caster (player)";
 	[common]
 	{
 		screen_name = "Lizard Lash";
@@ -17,7 +17,7 @@
 			[*]
 			{
 				condition* = receive_world_message("we_req_cast_charge");
-				action* = call_sfx_script( "zaurask_caster_charge_one_hand" );
+				action* = call_sfx_script("zaurask_caster_charge_one_hand");
 			}
 			[*]
 			{
@@ -47,9 +47,9 @@
 		required_level = 38;
 		max_level = 58;
 
-		mana_cost_modifier = (#magic*2) * 1.0;
+		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 
-		attack_damage_modifier_min = ((#magic*3) * 1.0) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 1.0) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.0) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.0) * 1.0) * 1.1;
 	}
 }
