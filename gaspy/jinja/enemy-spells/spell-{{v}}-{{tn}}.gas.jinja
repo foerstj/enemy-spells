@@ -7,7 +7,9 @@
 	{
 		screen_name = "{{sn}}";
 		description = "Spell of the {{en}}.";
+		{% if isg %}
 		membership = spells_{{mc}}{% if isg %}, spells_{{isg}}{% endif %};
+		{% endif %}
 		[template_triggers]
 		{
 			[*]
@@ -15,6 +17,13 @@
 				condition* = receive_world_message("we_dropped");
 				action* = call_sfx_script("{{mc}}_spell_sparkle");
 			}
+			{% if charge_effect %}
+			[*]
+			{
+				condition* = receive_world_message("we_req_cast_charge");
+				action* = call_sfx_script("{{charge_effect}}");
+			}
+			{% endif %}
 			{% if cast_effect or cast_sound %}
 			[*]
 			{

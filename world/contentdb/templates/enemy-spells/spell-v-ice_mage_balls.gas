@@ -2,7 +2,7 @@
 {
 	specializes = base_spell_enemy_spells_nature_magic;
 
-	doc = "spell Ice mage balls (player)";
+	doc = "spell ice mage balls (player)";
 	[common]
 	{
 		screen_name = "Spiral Freeze";
@@ -49,7 +49,7 @@
 
 		mana_cost_modifier = (#magic*2) * 1.0;
 
-		attack_damage_modifier_min = ((#magic*3) * 1.0) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 1.0) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.0) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.0) * 1.0) * 1.1;
 	}
 }
