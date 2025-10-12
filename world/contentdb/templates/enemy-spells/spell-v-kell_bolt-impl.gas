@@ -1,0 +1,10 @@
+[t:template,n:base_spell_kell_bolt_player_impl]
+{
+	specializes = base_spell_kell_bolt_player;
+
+	[spell_lightning]
+	{
+		dur = 0.333;
+		effect_script = kell_bolt_player;
+	}
+}

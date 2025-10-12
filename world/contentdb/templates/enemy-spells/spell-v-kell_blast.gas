@@ -1,4 +1,4 @@
-[t:template,n:spell_kell_blast_player]
+[t:template,n:base_spell_kell_blast_player]
 {
 	specializes = base_spell_enemy_spells_combat_magic;
 
@@ -18,12 +18,6 @@
 	{
 		cast_range = 13;
 		cast_reload_delay = 1;
-		effect_duration = 1;
-	}
-	[spell_fire]
-	{
-		effect_script = kell_blast;
-		particle_fit = 0.2;
 	}
 
 	[aspect]
@@ -37,7 +31,9 @@
 
 		mana_cost_modifier = (#magic*2) * 1.5;
 
-		attack_damage_modifier_min = ((#magic*3) * 1.5) * 0.9;
-		attack_damage_modifier_max = ((#magic*3) * 1.5) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.5) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.5) * 1.0) * 1.1;
 	}
 }
+
+[t:template,n:spell_kell_blast_player] { specializes = base_spell_kell_blast_player_impl; }

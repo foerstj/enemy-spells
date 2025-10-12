@@ -1,0 +1,14 @@
+[t:template,n:base_spell_kell_blast_player_impl]
+{
+	specializes = base_spell_kell_blast_player;
+
+	[magic]
+	{
+		effect_duration = 1;
+	}
+	[spell_fire]
+	{
+		effect_script = kell_blast;
+		particle_fit = 0.2;
+	}
+}
