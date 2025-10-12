@@ -1,0 +1,108 @@
+// Based on kell_bolt, but using the hands as attach points
+[effect_script*]
+{
+	name = kell_bolt_player;
+
+	script = [[
+		sound play s_e_spell_lightning_cast at #SOURCE_POSITION dist 5 30;
+
+		set $color 1,.5,.4;
+		set $scale 1.4;
+		set $disp .2;
+
+		set $ap_l bip01_l_finger0;
+		set $ap_r bip01_r_finger0;
+
+		// Create the lightning using the second target supplied to the script
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)ts(4)
+			color0(1,.35,.3)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_l target;
+		sfx attach_point #PEEK @kill_bone source;
+		set $bolt #POP;
+		sfx start $bolt;
+
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)color0(1,.5,.4)[0]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_l target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx attach $bolt #POP;
+
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)ts(4)
+			color0(1,.35,.3)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_l target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)ts(4)
+			color0(1,.2,.2)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_l target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+
+		sfx create fire #SOURCE 
+			"must_update()velocity(0,10,0)accel(0,0,0)instant()line()color0(1,.35,.3)
+			color1(0,.15,.1)count(30)min_displace(0)max_displace(0)
+			[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_l target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+		// Create the lightning using the second target supplied to the script
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)color0(1,.5,.4)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_r target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)ts(4)
+			color0(1,.35,.3)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_r target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+
+		sfx create lightning #SOURCE 
+			"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)ts(4)
+			color0(1,.2,.2)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_r target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+
+		sfx create fire #SOURCE 
+			"must_update()velocity(0,10,0)accel(0,0,0)instant()line()color0(1,.35,.3)
+			color1(0,.15,.1)count(30)min_displace(0)max_displace(0)[1]";
+		sfx target #PEEK target;
+		sfx attach_point #PEEK $ap_r target;
+		sfx attach_point #PEEK @kill_bone source;
+		sfx start #POP;
+
+		sfx create explosion #TARGET_KB 
+			"srate(.0001)vmin(20)vmax(40)omni_dir()ts(.15)
+			scale_range(.33,.66,0)texture(b_sfx_sparkle01)color0(1,.6,.6)
+			color1(0,0,0)dur(.35)radius(.1)fade_range(16,16,0)count(30)";
+		sfx start #POP;
+
+		sfx create explosion #TARGET_KB 
+			"vmin(22)vmax(32)omni_dir()ts(.15)
+			scale_range(.33,.66,0)texture(b_sfx_sparkle01)color0(1,.6,.6)
+			color1(0,0,0)dur(.55)radius(.1)fade_range(12,12,0)count(30)";
+		sfx start #POP;
+
+		worldmsg WE_SPELL_SYNC_END #OWNER_GOID #OWNER_GOID #TARGET_GOID;
+	]];
+}

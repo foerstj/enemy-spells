@@ -22,7 +22,7 @@
 	[spell_lightning]
 	{
 		dur = 0.333;
-		effect_script = kell_bolt;
+		effect_script = kell_bolt_player;
 	}
 
 	[aspect]
