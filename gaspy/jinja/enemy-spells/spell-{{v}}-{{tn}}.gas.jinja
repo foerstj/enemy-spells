@@ -1,4 +1,4 @@
-[t:template,n:spell_{{tn}}_player]
+[t:template,n:{% if base_only %}base_{% endif %}spell_{{tn}}_player]
 {
 	specializes = base_spell_enemy_spells_{{mc}}_magic;
 
@@ -10,6 +10,7 @@
 		{% if isg %}
 		membership = spells_{{mc}}{% if isg %}, spells_{{isg}}{% endif %};
 		{% endif %}
+		{% if charge_effect or cast_effect or cast_sound %}
 		[template_triggers]
 		{
 			[*]
@@ -37,6 +38,7 @@
 			}
 			{% endif %}
 		}
+		{% endif %}
 	}
 	[gui]
 	{
@@ -48,7 +50,9 @@
 		cast_range = {{cast_range}};
 		cast_reload_delay = {{cast_reload_delay}};
 	}
+	{% if component %}
 	[spell_{{component}}] {}
+	{% endif %}
 
 	[aspect]
 	{
