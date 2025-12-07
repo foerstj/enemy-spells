@@ -40,12 +40,12 @@
 
 	[aspect]
 	{
-		gold_value = 2400;
+		gold_value = 950;
 	}
 	[magic]
 	{
-		required_level = 19;
-		max_level = 39;
+		required_level = 15;
+		max_level = 35;
 
 		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 
