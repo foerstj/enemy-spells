@@ -1,4 +1,4 @@
-[t:es_demo_target,n:0x00400000]
+[t:target_attackable,n:0x00400000]
 {
 	[aspect]
 	{

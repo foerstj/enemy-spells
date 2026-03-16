@@ -1,4 +1,4 @@
-[t:es_demo_target,n:0x00100005]
+[t:target_attackable,n:0x00100005]
 {
 	[placement]
 	{
