@@ -1,0 +1,22 @@
+[t:template,n:base_spell_gom_skull_storm_player_impl]
+{
+	specializes = base_spell_gom_skull_storm_player;
+
+	[attack]
+	{
+		area_damage_radius = 4;
+	}
+	[spell_deathrain]
+	{
+		drop_freq_max = .2;
+		drop_freq_min = .2;
+		drop_script = "gom_skull_storm";
+		max_drops = 6;
+		spawn_height = 15.0;
+		spawn_radius = 4.0;
+	}
+	[physics]
+	{
+		explosion_magnitude = 4;
+	}
+}

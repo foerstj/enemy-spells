@@ -1,0 +1,15 @@
+[t:template,n:base_spell_gom_flamethrower_player_impl]
+{
+	specializes = base_spell_gom_flamethrower_player;
+
+	[magic]
+	{
+		effect_duration = 3;
+	}
+	[spell_fire]
+	{
+		effect_script = gom_flamethrower;
+		particle_fit = 0.2;
+		watch_caster = true;
+	}
+}

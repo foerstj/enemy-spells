@@ -1,0 +1,31 @@
+[t:template,n:base_spell_gom_spikes_player_impl]
+{
+	specializes = base_spell_gom_spikes_player;
+
+	[inventory]
+	{
+		[delayed_pcontent]
+		{
+			[oneof*]
+			{
+				[all*]
+				{
+					chance = 0.500;
+					il_main = spike_glb_rock_01;
+				}
+				[all*]
+				{
+					chance = 0.500;
+					il_main = spike_glb_rock_02;
+				}
+			}
+		}
+	}
+	[spell_summon_multiple]
+	{
+		effect_script = "gom_spikes";
+		spawn_radius	= 2.0;
+		summon_script = "gom_spikes_fire";
+		particle_fit = 0.2;
+	}
+}

@@ -1,0 +1,11 @@
+[t:template,n:base_spell_gom_icesnake_player_impl]
+{
+	specializes = base_spell_gom_icesnake_player;
+
+	[spell_fire]
+	{
+		effect_script	= gom_icesnake;
+		particle_fit	= 0.2;
+		ignite			= false;
+	}
+}

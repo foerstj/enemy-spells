@@ -1,0 +1,14 @@
+[t:template,n:base_spell_gom_big_bolt_player_impl]
+{
+	specializes = base_spell_gom_big_bolt_player;
+
+	[magic]
+	{
+		effect_duration = 2.5;
+	}
+	[spell_lightning]
+	{
+		dur = 1.5;
+		effect_script = gom_big_bolt;
+	}
+}

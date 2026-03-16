@@ -1,0 +1,39 @@
+[t:template,n:base_spell_gom_turret_fire_player]
+{
+	specializes = base_spell_enemy_spells_combat_magic;
+
+	doc = "spell gom turret fire (player)";
+	[common]
+	{
+		screen_name = "TBD Turret Fire";
+		description = "Spell of the Super Gom.";
+		membership = spells_combat, spells_fire;
+	}
+	[gui]
+	{
+		active_icon		= b_gui_ig_i_ic_sp_es-v-gom_turret_fire;
+		inventory_icon	= b_gui_ig_i_ic_sp_es-v-gom_turret_fire-inv;
+	}
+	[magic]
+	{
+		cast_range = 14;
+		cast_reload_delay = 0;
+	}
+
+	[aspect]
+	{
+		gold_value = 140000;
+	}
+	[magic]
+	{
+		required_level = 64;
+		max_level = 84;
+
+		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
+
+		attack_damage_modifier_min = (((#magic*3) * 1.0) * 1.0) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.0) * 1.0) * 1.1;
+	}
+}
+
+[t:template,n:spell_gom_turret_fire_player] { specializes = base_spell_gom_turret_fire_player_impl; }

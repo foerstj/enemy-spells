@@ -1,0 +1,16 @@
+[t:template,n:base_spell_gom_turret_fire_player_impl]
+{
+	specializes = base_spell_gom_turret_fire_player;
+
+	[magic]
+	{
+		effect_duration = 2;
+	}
+	[spell_turret]
+	{
+		initial_delay = 0.4;
+		shot_rate = 0.2;
+		effect_script = gom_turret_fire;
+		charge_effect = gom_turret_fire_charge;
+	}
+}

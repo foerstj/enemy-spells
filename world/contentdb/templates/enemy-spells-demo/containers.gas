@@ -33,13 +33,17 @@
 	{
 		[other]
 		{
-			il_main = dsx_spell_hassat_shaman_fireshot_player;
-			il_main = dsx_spell_rune_fiend_blast_player;
-			il_main = dsx_spell_slithermage_blast_player;
-			il_main = dsx_spell_rune_caster_damage_player;
-			il_main = dsx_spell_noctiss_sap_player;
-			il_main = dsx_spell_zaurask_caster_player;
-			il_main = spell_ice_mage_iceblast_player;
+			il_main = spell_gom_big_bolt_player;
+			il_main = spell_gom_flamethrower_player;
+			il_main = spell_gom_force_player;
+			il_main = spell_gom_ground_lightning_player;
+			il_main = spell_gom_icesnake_player;
+			il_main = spell_gom_skull_storm_player;
+			il_main = spell_gom_spikes_player;
+			il_main = spell_gom_throw_player;
+			il_main = spell_gom_turret_fire_player;
+			il_main = spell_gom_turret_lightning_player;
+			il_main = spell_skull_rain_player;
 		}
 	}
 }
@@ -56,13 +60,17 @@
 	{
 		[other]
 		{
-			il_main = dsx_spell_hassat_shaman_fireshot_demo;
-			il_main = dsx_spell_rune_fiend_blast_demo;
-			il_main = dsx_spell_slithermage_blast_demo;
-			il_main = dsx_spell_rune_caster_damage_demo;
-			il_main = dsx_spell_noctiss_sap_demo;
-			il_main = dsx_spell_zaurask_caster_demo;
-			il_main = spell_ice_mage_iceblast_demo;
+			il_main = spell_gom_big_bolt_demo;
+			il_main = spell_gom_flamethrower_demo;
+			il_main = spell_gom_force_demo;
+			il_main = spell_gom_ground_lightning_demo;
+			il_main = spell_gom_icesnake_demo;
+			il_main = spell_gom_skull_storm_demo;
+			il_main = spell_gom_spikes_demo;
+			il_main = spell_gom_throw_demo;
+			il_main = spell_gom_turret_fire_demo;
+			il_main = spell_gom_turret_lightning_demo;
+			il_main = spell_skull_rain_demo;
 		}
 	}
 }
@@ -96,6 +104,14 @@
 			il_main = spell_maljin_ball_03_player;
 			il_main = spell_wraith_hands_player;
 			il_main = spell_wraith_zap_player;
+			// v0.3
+			il_main = dsx_spell_hassat_shaman_fireshot_player;
+			il_main = dsx_spell_rune_fiend_blast_player;
+			il_main = dsx_spell_slithermage_blast_player;
+			il_main = dsx_spell_rune_caster_damage_player;
+			il_main = dsx_spell_noctiss_sap_player;
+			il_main = dsx_spell_zaurask_caster_player;
+			il_main = spell_ice_mage_iceblast_player;
 		}
 	}
 }
@@ -129,6 +145,14 @@
 			il_main = spell_maljin_ball_03_demo;
 			il_main = spell_wraith_hands_demo;
 			il_main = spell_wraith_zap_demo;
+			// v0.3
+			il_main = dsx_spell_hassat_shaman_fireshot_demo;
+			il_main = dsx_spell_rune_fiend_blast_demo;
+			il_main = dsx_spell_slithermage_blast_demo;
+			il_main = dsx_spell_rune_caster_damage_demo;
+			il_main = dsx_spell_noctiss_sap_demo;
+			il_main = dsx_spell_zaurask_caster_demo;
+			il_main = spell_ice_mage_iceblast_demo;
 		}
 	}
 }

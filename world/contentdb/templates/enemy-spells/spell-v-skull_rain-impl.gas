@@ -1,0 +1,22 @@
+[t:template,n:base_spell_skull_rain_player_impl]
+{
+	specializes = base_spell_skull_rain_player;
+
+	[attack]
+	{
+		area_damage_radius = 4;
+	}
+	[spell_deathrain]
+	{
+		drop_freq_max = .25;
+		drop_freq_min = .2;
+		drop_script = "gom_skull_rain";
+		max_drops = 4;
+		spawn_height = 15.0;
+		spawn_radius = 6.0;
+	}
+	[physics]
+	{
+		explosion_magnitude = 4;
+	}
+}
