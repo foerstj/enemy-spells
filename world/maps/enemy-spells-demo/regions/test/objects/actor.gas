@@ -1,9 +1,17 @@
+[t:es_test_gom_super,n:0x00300014]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.93132,1.90735e-006,1.42199,0xb3bce8f3;
+	}
+}
 [t:es_test_gom,n:0x00300013]
 {
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 0.157863,0,1.63911,0x3d48d951;
+	  p position = -1.16388,0,1.42736,0x04530878;
 	}
 }
 [t:braak_magic,n:0x00300000]
