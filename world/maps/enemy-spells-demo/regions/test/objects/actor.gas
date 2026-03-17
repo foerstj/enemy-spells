@@ -3,15 +3,15 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 1.93132,1.90735e-006,1.42199,0xb3bce8f3;
+	  p position = 0.921674,1.90735e-006,1.42407,0xb82ad741;
 	}
 }
 [t:es_test_gom,n:0x00300013]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -1.16388,0,1.42736,0x04530878;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = 0.18546,0,-2.59693,0x33199f5d;
 	}
 }
 [t:braak_magic,n:0x00300000]

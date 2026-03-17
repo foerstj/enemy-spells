@@ -75,11 +75,11 @@
 		[other]
 		{
 			il_active_primary_spell=spell_gom_force;
-			il_spell_1=spell_gom_flamethrower;
-			il_spell_2=spell_skull_rain;
-			il_spell_3=spell_gom_summon;
-			il_spell_4=spell_gom_icesnake;
-			il_spell_5=spell_gom_ground_lightning;
+			//il_spell_1=spell_gom_flamethrower;
+			//il_spell_2=spell_skull_rain;
+			//il_spell_3=spell_gom_summon;
+			//il_spell_4=spell_gom_icesnake;
+			//il_spell_5=spell_gom_ground_lightning;
 		}
 	}
 	[mind]

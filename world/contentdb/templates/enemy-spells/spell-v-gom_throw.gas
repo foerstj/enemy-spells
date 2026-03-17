@@ -34,7 +34,7 @@
 	[magic]
 	{
 		cast_range = 12;
-		cast_reload_delay = 0;
+		cast_reload_delay = 1;
 	}
 	[spell_default] {}
 
