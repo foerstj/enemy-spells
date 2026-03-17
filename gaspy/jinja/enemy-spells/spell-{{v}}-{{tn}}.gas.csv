@@ -25,13 +25,13 @@ slithermage_blast;Comet Blow;Slithermage;combat;loa;33;34000;1.5;;1.7;;;10;1;def
 zaurask_caster;Lizard Lash;Zaurask Seer;nature;loa;30;30000;1;;1;;;10;1;default;zaurask_caster_charge_one_hand;zaurask_caster_spell;;
 ;;;;;;;;;;;;;;;;;;
 gom_ground_lightning;TBD Ground Lightning;Gom;nature;v;63;140000;1;;1;;;12;2;;;;;x
-gom_icesnake;TBD Icesnake;Gom;nature;v;63;140000;1;;1;;;12;2;;;;;x
-gom_force;TBD Force;Gom;combat;v;63;140000;1;;1;;;12;2;default;;gom_force;;
+gom_icesnake;Ice Snake;Gom;nature;v;63;140000;1;;1;;ice;12;2;;;;;x
+gom_force;Force;Gom;combat;v;63;140000;1;;1;;;12;2;default;;gom_force;;
 gom_flamethrower;TBD Flamethrower;Gom;combat;v;63;140000;1;;1;;;8;3;;;;;x
-skull_rain;TBD Skull Rain;Gom;combat;v;63;140000;1;;1;;;12;2;;;;;x
+skull_rain;Skull Rain;Gom;combat;v;63;140000;1;;1;;;12;2;;;;;x
 gom_throw;TBD Throw;Super Gom;combat;v;64;140000;1;;1;;;12;2;default;gom_throw_charge;gom_throw;;
-gom_big_bolt;TBD Big Bolt;Super Gom;nature;v;64;140000;1;;1;;;8;2.5;;big_bolt_charge;;;x
-gom_spikes;TBD Spikes;Super Gom;combat;v;64;140000;1;;1;;;10;2;;;;;x
-gom_skull_storm;TBD Skull Storm;Super Gom;combat;v;64;140000;1;;1;;;12;2;;gom_skull_storm_charge;;;x
-gom_turret_fire;TBD Turret Fire;Super Gom;combat;v;64;140000;1;;1;;fire;14;2;;;;;x
-gom_turret_lightning;TBD Turret Lightning;Super Gom;combat;v;64;140000;1;;1;;electric;14;2;;;;;x
+gom_big_bolt;TBD Big Bolt;Super Gom;nature;v;64;140000;1;;1;;electric;8;2.5;;big_bolt_charge;;;x
+gom_spikes;Lava Spikes;Super Gom;combat;v;64;140000;1;;1;;;10;2;;;;;x
+gom_skull_storm;Skull Storm;Super Gom;combat;v;64;140000;1;;1;;;12;2;;gom_skull_storm_charge;;;x
+gom_turret_fire;Fire Turret;Super Gom;combat;v;64;140000;1;;1;;fire;14;2;;;;;x
+gom_turret_lightning;Lightning Turret;Super Gom;nature;v;64;140000;1;;1;;electric;14;2;;;;;x

@@ -5,7 +5,7 @@
 	doc = "spell gom turret fire (player)";
 	[common]
 	{
-		screen_name = "TBD Turret Fire";
+		screen_name = "Fire Turret";
 		description = "Spell of the Super Gom.";
 		membership = spells_combat, spells_fire;
 	}

@@ -5,8 +5,9 @@
 	doc = "spell gom icesnake (player)";
 	[common]
 	{
-		screen_name = "TBD Icesnake";
+		screen_name = "Ice Snake";
 		description = "Spell of the Gom.";
+		membership = spells_nature, spells_ice;
 	}
 	[gui]
 	{

@@ -5,7 +5,7 @@
 	doc = "spell gom spikes (player)";
 	[common]
 	{
-		screen_name = "TBD Spikes";
+		screen_name = "Lava Spikes";
 		description = "Spell of the Super Gom.";
 	}
 	[gui]

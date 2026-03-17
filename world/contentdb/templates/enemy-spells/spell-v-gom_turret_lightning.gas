@@ -1,13 +1,13 @@
 [t:template,n:base_spell_gom_turret_lightning_player]
 {
-	specializes = base_spell_enemy_spells_combat_magic;
+	specializes = base_spell_enemy_spells_nature_magic;
 
 	doc = "spell gom turret lightning (player)";
 	[common]
 	{
-		screen_name = "TBD Turret Lightning";
+		screen_name = "Lightning Turret";
 		description = "Spell of the Super Gom.";
-		membership = spells_combat, spells_electric;
+		membership = spells_nature, spells_electric;
 	}
 	[gui]
 	{
