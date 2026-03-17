@@ -5,7 +5,7 @@
 	doc = "spell skull rain (player)";
 	[common]
 	{
-		screen_name = "Skull Rain";
+		screen_name = "TBD Skull Rain";
 		description = "Spell of Gom.";
 	}
 	[gui]

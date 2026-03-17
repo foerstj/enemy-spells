@@ -27,8 +27,8 @@ zaurask_caster;Lizard Lash;the;Zaurask Seer;nature;loa;30;30000;1;;1;;;10;1;defa
 gom_ground_lightning;TBD Ground Lightning;;Gom;nature;v;63;140000;1;;1;;;12;1.5;;;;;x;1
 gom_icesnake;Ice Snake;;Gom;nature;v;63;140000;1;;1;;ice;12;1;;;;;x;
 gom_force;Force;;Gom;combat;v;63;140000;1;;1;;;12;2;default;;gom_force;;;
-gom_flamethrower;TBD Flamethrower;;Gom;combat;v;63;140000;1;;1;;;8;3;;;;;x;
-skull_rain;Skull Rain;;Gom;combat;v;63;140000;1;;1;;;12;1.5;;;;;x;1
+gom_flamethrower;TBD Flamethrower;;Gom;combat;v;63;140000;1;;1;;;8;2.5;;;;;x;
+skull_rain;TBD Skull Rain;;Gom;combat;v;63;140000;1;;1;;;12;1.5;;;;;x;1
 gom_throw;TBD Throw;;Super Gom;combat;v;64;140000;1;;1;;;12;2;default;gom_throw_charge;gom_throw;;;
 gom_big_bolt;TBD Big Bolt;;Super Gom;nature;v;64;140000;1;;1;;electric;8;2.5;;big_bolt_charge;;;x;1
 gom_spikes;Lava Spikes;;Super Gom;combat;v;64;140000;1;;1;;;10;2;;;;;x;
