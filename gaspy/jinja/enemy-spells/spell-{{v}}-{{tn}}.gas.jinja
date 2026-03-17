@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "{{sn}}";
-		description = "Spell of the {{en}}.";
+		description = "Spell of {% if a %}{{a}} {% endif %}{{en}}.";
 		{% if isg %}
 		membership = spells_{{mc}}{% if isg %}, spells_{{isg}}{% endif %};
 		{% endif %}

@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "TBD Ground Lightning";
-		description = "Spell of the Gom.";
+		description = "Spell of Gom.";
 	}
 	[gui]
 	{

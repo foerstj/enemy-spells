@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Ice Snake";
-		description = "Spell of the Gom.";
+		description = "Spell of Gom.";
 		membership = spells_nature, spells_ice;
 	}
 	[gui]

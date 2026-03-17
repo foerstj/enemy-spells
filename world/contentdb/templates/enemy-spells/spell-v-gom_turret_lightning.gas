@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Lightning Turret";
-		description = "Spell of the Super Gom.";
+		description = "Spell of Super Gom.";
 		membership = spells_nature, spells_electric;
 	}
 	[gui]

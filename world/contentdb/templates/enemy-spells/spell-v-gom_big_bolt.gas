@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "TBD Big Bolt";
-		description = "Spell of the Super Gom.";
+		description = "Spell of Super Gom.";
 		membership = spells_nature, spells_electric;
 		[template_triggers]
 		{
