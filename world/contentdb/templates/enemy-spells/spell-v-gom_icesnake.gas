@@ -17,7 +17,7 @@
 	[magic]
 	{
 		cast_range = 12;
-		cast_reload_delay = 2;
+		cast_reload_delay = 1;
 	}
 
 	[aspect]
