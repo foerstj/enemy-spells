@@ -1,3 +1,11 @@
+[t:es_test_gom,n:0x00300013]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.157863,0,1.63911,0x3d48d951;
+	}
+}
 [t:braak_magic,n:0x00300000]
 {
 	[mind]
@@ -6,99 +14,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.11573,0,-0.701047,0xdd94f1fd;
-	}
-}
-[t:wraith_mage,n:0x00300006]
-{
-	[placement]
-	{
-	  p position = 2.76976,3.8147e-006,0.317884,0x2e87c691;
-	}
-}
-[t:dsx_hassat_shaman,n:0x0030000c]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 3.31668,-1.90735e-006,2.17687,0xff719f88;
-	}
-}
-[t:dsx_rune_guardian_r,n:0x0030000d]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 1.81503,0,2.40013,0xff719f88;
-	}
-}
-[t:dsx_slithermage_ranged,n:0x0030000e]
-{
-	[placement]
-	{
-	  q orientation = 0,-1,0,4.17421e-007;
-	  p position = 0.487381,0,2.23591,0xff719f88;
-	}
-}
-[t:dsx_rune_caster,n:0x0030000f]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -1.05604,0,2.56632,0xff719f88;
-	}
-}
-[t:dsx_noctiss,n:0x00300010]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -2.24974,0,2.34467,0xff719f88;
-	}
-}
-[t:dsx_zaurask_caster,n:0x00300011]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -3.3778,0,2.45523,0xff719f88;
-	}
-}
-[t:ice_mage,n:0x00300012]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -0.133544,-9.53674e-007,0.131067,0xff719f88;
-	}
-}
-[t:warlock,n:0x00300007]
-{
-	[placement]
-	{
-	  p position = -0.693693,0,-3.40377,0xb3bce8f3;
-	}
-}
-[t:ghost,n:0x00300008]
-{
-	[placement]
-	{
-	  p position = -0.467959,0,-1.3043,0xb3bce8f3;
-	}
-}
-[t:lava_imp_02,n:0x00300009]
-{
-	[placement]
-	{
-	  p position = 0.665174,0,1.7481,0xb3bce8f3;
-	}
-}
-[t:lava_imp_03,n:0x0030000a]
-{
-	[placement]
-	{
-	  p position = -1.37339,0,1.99045,0xb3bce8f3;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.05465,0,-0.382504,0x6b3c7bab;
 	}
 }
 [t:dark_caster,n:0x00300002]
@@ -109,8 +26,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -0.837481,0,-1.48574,0x04530878;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0.343876,0,-0.246071,0x6b3c7bab;
 	}
 }
 [t:swamp_witch,n:0x00300003]
@@ -121,8 +38,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -0.811335,0,2.29031,0x04530878;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -3.88007,0,-0.272217,0x5ed2fab8;
 	}
 }
 [t:sand_mage,n:0x00300004]
@@ -133,21 +50,115 @@
 	}
 	[placement]
 	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.0749741,3.8147e-006,0.108877,0x5ed2fab8;
+	}
+}
+[t:dsx_hassat_shaman,n:0x0030000c]
+{
+	[placement]
+	{
 	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = -1.19243,3.8147e-006,-1.90459,0xd9353565;
+	  p position = 3.46415,-1.90735e-006,0.106569,0xa3df7ec4;
+	}
+}
+[t:dsx_rune_guardian_r,n:0x0030000d]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.9625,0,0.329828,0xa3df7ec4;
+	}
+}
+[t:dsx_slithermage_ranged,n:0x0030000e]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-4.17421e-007;
+	  p position = 0.634849,0,0.165609,0xa3df7ec4;
+	}
+}
+[t:dsx_rune_caster,n:0x0030000f]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.908572,0,0.496019,0xa3df7ec4;
+	}
+}
+[t:dsx_noctiss,n:0x00300010]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -2.10227,0,0.274368,0xa3df7ec4;
+	}
+}
+[t:dsx_zaurask_caster,n:0x00300011]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -3.23033,0,0.38493,0xa3df7ec4;
+	}
+}
+[t:ice_mage,n:0x00300012]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.0139244,-9.53674e-007,-1.93923,0xa3df7ec4;
 	}
 }
 [t:kell,n:0x00300005]
 {
 	[placement]
 	{
-	  p position = -0.296428,0,-1.3049,0xb82ad741;
+	  q orientation = 0,1,0,0;
+	  p position = 0.688099,0,1.47145,0x2392ab69;
 	}
 }
 [t:maljin_magic,n:0x0030000b]
 {
 	[placement]
 	{
-	  p position = -0.694628,0,1.59341,0xb82ad741;
+	  q orientation = 0,1,0,0;
+	  p position = 1.0863,0,-1.42686,0x2392ab69;
+	}
+}
+[t:warlock,n:0x00300007]
+{
+	[placement]
+	{
+	  p position = -1.08536,0,-3.57031,0xf736eb2d;
+	}
+}
+[t:ghost,n:0x00300008]
+{
+	[placement]
+	{
+	  p position = -0.859627,0,-1.47084,0xf736eb2d;
+	}
+}
+[t:lava_imp_02,n:0x00300009]
+{
+	[placement]
+	{
+	  p position = 0.273515,0,1.58155,0xf736eb2d;
+	}
+}
+[t:lava_imp_03,n:0x0030000a]
+{
+	[placement]
+	{
+	  p position = -1.76506,0,1.82391,0xf736eb2d;
+	}
+}
+[t:wraith_mage,n:0x00300006]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.709557,3.8147e-006,2.60322,0x151e5536;
 	}
 }
