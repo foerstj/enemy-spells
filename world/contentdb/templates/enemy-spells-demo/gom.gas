@@ -74,7 +74,7 @@
 		selected_active_location = il_active_primary_spell;
 		[other]
 		{
-			il_active_primary_spell=spell_gom_icesnake;
+			il_active_primary_spell=spell_gom_ground_lightning;
 			//il_active_primary_spell=spell_gom_force;
 			//il_spell_1=spell_gom_flamethrower;
 			//il_spell_2=spell_skull_rain;
