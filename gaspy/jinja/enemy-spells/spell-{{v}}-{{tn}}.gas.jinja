@@ -61,12 +61,16 @@
 	[magic]
 	{
 		required_level = {{req_lvl}};
-		max_level = {{ req_lvl + 20 }};
+		max_level = {{req_lvl + 20}};
 
 		mana_cost_modifier = ((#magic*2) * {{mcm | float}}) * {{(mbf or 1) | float}};
 
 		attack_damage_modifier_min = (((#magic*3) * {{adm | float}}) * {{(abf or 1) | float}}) * 0.9;
 		attack_damage_modifier_max = (((#magic*3) * {{adm | float}}) * {{(abf or 1) | float}}) * 1.1;
+		{% if csa %}
+
+		cast_sub_animation = {{csa}};
+		{% endif %}
 	}
 }
 {% if custom_impl %}
