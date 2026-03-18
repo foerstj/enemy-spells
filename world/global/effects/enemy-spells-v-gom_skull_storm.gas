@@ -3,18 +3,7 @@
 	name	=gom_skull_storm_player_charge;
 
 	script	=[[
-			pause 1;  // ADDED
-
-			call gom_skull_charge;
-			pause .33;
-			call gom_skull_charge;
-			pause .33;
-			call gom_skull_charge;
-			pause .33;
-			call gom_skull_charge;
-			pause .33;
-			call gom_skull_charge;
-			pause .33;
-			call gom_skull_charge;
+			pause 1;
+			call gom_skull_storm_charge;
 			]];
 }
