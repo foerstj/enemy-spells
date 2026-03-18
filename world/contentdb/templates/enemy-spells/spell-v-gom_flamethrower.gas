@@ -5,7 +5,7 @@
 	doc = "spell gom flamethrower (player)";
 	[common]
 	{
-		screen_name = "TBD Flamethrower";
+		screen_name = "Copper Sulphate";
 		description = "Spell of Gom.";
 	}
 	[gui]
@@ -21,12 +21,12 @@
 
 	[aspect]
 	{
-		gold_value = 140000;
+		gold_value = 110000;
 	}
 	[magic]
 	{
-		required_level = 63;
-		max_level = 83;
+		required_level = 59;
+		max_level = 79;
 
 		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 

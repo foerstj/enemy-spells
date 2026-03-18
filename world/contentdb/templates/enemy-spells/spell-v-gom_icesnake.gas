@@ -5,7 +5,7 @@
 	doc = "spell gom icesnake (player)";
 	[common]
 	{
-		screen_name = "Ice Snake";
+		screen_name = "Icesnake";
 		description = "Spell of Gom.";
 		membership = spells_nature, spells_ice;
 	}
@@ -22,12 +22,12 @@
 
 	[aspect]
 	{
-		gold_value = 140000;
+		gold_value = 120000;
 	}
 	[magic]
 	{
-		required_level = 63;
-		max_level = 83;
+		required_level = 60;
+		max_level = 80;
 
 		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 

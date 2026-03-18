@@ -5,7 +5,7 @@
 	doc = "spell skull rain (player)";
 	[common]
 	{
-		screen_name = "TBD Skull Rain";
+		screen_name = "Rockfall";
 		description = "Spell of Gom.";
 	}
 	[gui]
@@ -21,12 +21,12 @@
 
 	[aspect]
 	{
-		gold_value = 140000;
+		gold_value = 130000;
 	}
 	[magic]
 	{
-		required_level = 63;
-		max_level = 83;
+		required_level = 61;
+		max_level = 81;
 
 		mana_cost_modifier = ((#magic*2) * 1.0) * 1.0;
 
