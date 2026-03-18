@@ -34,7 +34,7 @@
 	[magic]
 	{
 		cast_range = 12;
-		cast_reload_delay = 2;
+		cast_reload_delay = 3;
 	}
 	[spell_default] {}
 
@@ -51,5 +51,7 @@
 
 		attack_damage_modifier_min = (((#magic*3) * 1.0) * 1.0) * 0.9;
 		attack_damage_modifier_max = (((#magic*3) * 1.0) * 1.0) * 1.1;
+
+		cast_sub_animation = 1;
 	}
 }
