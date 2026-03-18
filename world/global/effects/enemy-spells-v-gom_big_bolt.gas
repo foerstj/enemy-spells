@@ -1,0 +1,199 @@
+[effect_script*]
+{
+	name	=gom_big_bolt_player;
+
+	script	=[[
+			set $scale 4.0;
+			set $disp .2;
+			set $tex b_sfx_025;
+			
+			sfx create flurry #SOURCE 
+				"tout(0)radius(3)dur(3.4)color0(.5,.5,1)grow_params(.8,1,.1)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			//pause 1;  // REMOVED
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(-12,0,7)hp1(-9,1,9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(1,0,0)segments(10)bone_orient()rotate(90,0,0)";	
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(12,0,-7)hp1(9,-1,-9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(1,0,0)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause .25;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(-12,0,7)hp1(-9,1,9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.9,.15,.25)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(12,0,-7)hp1(9,-1,-9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.9,.15,.25)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause .25;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(-12,0,7)hp1(-9,1,9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.8,.3,.5)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(12,0,-7)hp1(9,-1,-9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.8,.3,.5)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause .25;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(-12,0,7)hp1(-9,1,9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.7,.45,.75)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(12,0,-7)hp1(9,-1,-9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.7,.45,.75)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause .25;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(-12,0,7)hp1(-9,1,9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.6,.6,1)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(1.3)ts(1)scale(.3)tin(.1)tout(.4)alpha(.4)
+				hp0(12,0,-7)hp1(9,-1,-9)spin(15)rp0(0,2,2)rp1(0,4,4)
+				color0(.6,.6,1)segments(10)bone_orient()rotate(90,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause .25;
+		
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(3)ts(1)scale(.3)tin(.2)tout(.4)alpha(.4)
+				hp0(2,2,0)hp1(-2,-2,0)spin(5)rp0(4,4,0)rp1(2,4,2)color0(.3,.7,1)
+				segments(6)bone_orient()rotate(90,0,0)irotate(15,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(2.8)ts(1)scale(.32)tin(.2)tout(.4)
+				alpha(.4)hp0(2,2,0)hp1(-2,-2,0)spin(5)rp0(4,4,0)rp1(2,4,2)
+				color0(.3,.6,1)segments(6)bone_orient()rotate(90,0,0)
+				irotate(30,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(2.6)ts(1)scale(.34)tin(.2)tout(.4)
+				alpha(.4)hp0(2,2,0)hp1(-2,-2,0)spin(5)rp0(4,4,0)rp1(2,4,2)
+				color0(.3,.5,1)segments(6)bone_orient()rotate(90,0,0)
+				irotate(45,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(2.4)ts(1)scale(.36)tin(.2)tout(.4)
+				alpha(.4)hp0(2,2,0)hp1(-2,-2,0)spin(5)rp0(4,4,0)rp1(2,4,2)
+				color0(.3,.4,1)segments(6)bone_orient()rotate(90,0,0)
+				irotate(60,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"texture($tex)dur(2.2)ts(1)scale(.38)tin(.2)tout(.4)
+				alpha(.4)hp0(2,2,0)hp1(-2,-2,0)spin(5)rp0(4,4,0)rp1(2,4,2)
+				color0(.3,.3,1)segments(6)bone_orient()rotate(90,0,0)
+				irotate(75,0,0)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			sfx create fire #SOURCE
+				"texture($tex)velocity(0,-10,0)accel(0,20,0)dur(3)ts(1)
+				scale(1.3)color0(.3,.3,1)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+			
+			pause 1;
+			
+			 // Create the lightning using the second target supplied to the script
+			sfx create lightning #SOURCE 
+				"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)color0(.1,.1,1)
+				[0][1]";
+			sfx target #PEEK target;
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx attach_point #PEEK @kill_bone source;
+			sfx start #POP;
+
+			// Create the lightning using the second target supplied to the script
+			sfx create lightning #SOURCE 
+				"must_update()scale($scale)mindisplace(-$disp)maxdisplace($disp)color0(.1,.1,1)
+				[1]";
+			sfx target #PEEK target;
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx attach_point #PEEK @kill_bone source;
+			sfx start #POP;
+
+			// Create the lightning using the second target supplied to the script
+			sfx create lightning #SOURCE 
+				"must_update()scale(2)mindisplace(-$disp)maxdisplace($disp)color0(.5,.5,1)
+				[1]";
+			sfx target #PEEK target;
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx attach_point #PEEK @kill_bone source;
+			sfx start #POP;
+
+			// Create the lightning using the second target supplied to the script
+			sfx create lightning #SOURCE 
+				"must_update()scale(2)mindisplace(-$disp)maxdisplace($disp)color0(.5,.5,1)
+				[1]";
+			sfx target #PEEK target;
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx attach_point #PEEK @kill_bone source;
+			sfx start #POP;
+			
+			sfx create explosion #TARGET_KB 
+				"must_update()vmin(2)vmax(3)omni_dir()ivel(0,1,0)rvel(2,0,2)scale_range(.3,.4,0)
+				color0(.3,.4,1)color1(0,.2,0)dur(1)radius(.4)fade_range(1.5,1.5,0)
+				count(50)";
+			sfx start #POP;
+			
+			sfx create explosion #TARGET_KB 
+				"must_update()texture($tex)srate(.003)vmin(2)vmax(3)omni_dir()ivel(0,1,0)
+				rvel(2,0,2)scale_range(.2,.3,0)color0(.3,.4,1)color1(0,.2,0)
+				dur(1)radius(.4)fade_range(1.5,1.5,0)count(100)";
+			sfx start #POP;
+			
+			sfx create explosion #TARGET_KB 
+				"must_update()texture(b_sfx_sparkle01)srate(.002)vmin(2)vmax(3)omni_dir()
+				ivel(0,1,0)rvel(2,0,2)scale_range(.4,.5,0)color0(.3,.4,1)
+				color1(0,.2,0)dur(1)radius(.4)fade_range(1.5,1.5,0)
+				count(100)";
+			sfx start #POP;
+			]];
+}

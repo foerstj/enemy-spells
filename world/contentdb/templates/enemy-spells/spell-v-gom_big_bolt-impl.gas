@@ -9,6 +9,6 @@
 	[spell_lightning]
 	{
 		dur = 1.5;
-		effect_script = gom_big_bolt;
+		effect_script = gom_big_bolt_player;
 	}
 }

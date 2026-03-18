@@ -343,7 +343,7 @@
 		spew_equipped_kill_count = ;
     	[other]
 		{
-			il_active_primary_spell = spell_gom_throw;
+			il_active_primary_spell = spell_gom_big_bolt;
 			//il_active_primary_spell=spell_gom_throw;
 			//il_spell_1=spell_gom_turret_fire;
 			//il_spell_2=spell_gom_turret_lightning;
