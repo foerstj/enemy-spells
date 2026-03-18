@@ -1,0 +1,9 @@
+[effect_script*]
+{
+	name	=gom_ground_lightning_player;
+
+	script	=[[
+			pause 0.33;
+			call gom_ground_lightning;
+			]];
+}

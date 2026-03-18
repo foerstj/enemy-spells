@@ -2,8 +2,16 @@
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.78814e-007;
-	  p position = -0.954898,0,1.38882,0xff719f88;
+	  q orientation = 0,1.78814e-007,0,1;
+	  p position = -0.00946546,0,-1.05844,0x33199f5d;
+	}
+}
+[t:es_test_gom_super,n:0x00300014]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.0993863,1.90735e-006,1.63153,0xff719f88;
 	}
 }
 [t:braak_magic,n:0x00300000]
@@ -108,14 +116,6 @@
 	{
 	  q orientation = 0,1,0,-1.66939e-007;
 	  p position = 0.0139244,-9.53674e-007,-1.93923,0xa3df7ec4;
-	}
-}
-[t:es_test_gom_super,n:0x00300014]
-{
-	[placement]
-	{
-	  q orientation = 0,1.66939e-007,0,1;
-	  p position = 0.265572,1.90735e-006,-1.00759,0x33199f5d;
 	}
 }
 [t:kell,n:0x00300005]

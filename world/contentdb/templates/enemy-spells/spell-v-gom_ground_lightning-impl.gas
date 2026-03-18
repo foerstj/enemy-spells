@@ -4,7 +4,7 @@
 
 	[spell_fire]
 	{
-		effect_script = gom_ground_lightning;
+		effect_script = gom_ground_lightning_player;
 		ignite = false;
 		particle_fit = 0.7;
 	}
