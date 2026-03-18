@@ -22,7 +22,7 @@
 			[*]
 			{
 				condition* = receive_world_message("we_req_cast");
-				action* = call_sfx_script("gom_throw");
+				action* = call_sfx_script("gom_throw_player");
 			}
 		}
 	}

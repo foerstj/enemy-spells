@@ -1,0 +1,69 @@
+[effect_script*]
+{
+	name	=gom_throw_player;
+
+	script	=[[
+			pause 1.2;  // ADDED
+
+			sfx create trackball #TARGET_KB 
+				"must_update()color0(1,.2,1)velocity(20)accel(0)scale(1)dur(10)afterlife(0)";
+			set $trackball #POP;
+			sfx position_at $trackball @shield_bone source;
+			sfx friendly party $trackball;
+            sfx start $trackball; 
+            
+            sfx create fire #SOURCE
+				"must_update()ts(4)max_radius(2)flamesize(2)count(32)scale(4)color0(.7,.4,.7)
+				color1(.3,0,.3)velocity(0,0,0)accel(0,0,0)alphafade(1)
+				instant()";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx attach $trackball #POP;
+			
+			waitfor collision $trackball #DEFAULT_TIMEOUT;
+
+			set $collision_type #POP;
+
+			if ( $collision_type != #NO_COLLISION )
+			{
+				get target_position $trackball target;
+				sound play s_e_spell_gom_throw_hit at #POP dist 10 30;
+            
+				get collision point $trackball;
+				
+				sfx create fire #POP 
+					"must_update()dur(.4)color0(.7,.4,.7)color1(.3,0,.3)count(10)alphafade(.85)
+					flamesize(3)max_radius(6)velocity(0,10,0)accel(0,10,0)";
+				sfx freeze_targets #PEEK;
+				sfx start #POP;
+	
+				get collision point $trackball;
+
+				sfx create explosion #POP 
+					"must_update()count(32)ts(1)offset(0,-.2,0)color0(.7,.4,.7)color1(.3,0,.3)
+					radius(0)vmin(10)vmax(12)rvel(11,9,11)dur(1.2)scale(1.6)
+					fade_range(.5,1,0)";
+				set $explosion #POP;
+				get collision direction $trackball;
+				sfx direction $explosion #POP;
+				sfx start $explosion;
+				
+				get collision point $trackball;
+
+				sfx create explosion #POP 
+					"must_update()count(32)radius(1)texture(b_sfx_sparkle01)ts(1)offset(0,-.2,0)
+					color0(.7,.4,.7)color1(.3,0,.3)radius(0)vmin(10)vmax(12)
+					rvel(11,9,11)dur(1.2)scale(1.6)fade_range(.5,1,0)";
+				set $explosion2 #POP;
+				get collision direction $trackball;
+				sfx direction $explosion2 #POP;
+				sfx start $explosion2;
+				
+			}
+
+			sfx destroy $trackball; 
+			
+            
+           	worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+			]];
+}
