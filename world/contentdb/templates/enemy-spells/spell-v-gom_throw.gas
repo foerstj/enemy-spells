@@ -5,7 +5,7 @@
 	doc = "spell gom throw (player)";
 	[common]
 	{
-		screen_name = "TBD Throw";
+		screen_name = "Energy Ball";
 		description = "Spell of Super Gom.";
 		[template_triggers]
 		{

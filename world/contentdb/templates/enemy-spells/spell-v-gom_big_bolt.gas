@@ -5,7 +5,7 @@
 	doc = "spell gom big bolt (player)";
 	[common]
 	{
-		screen_name = "TBD Big Bolt";
+		screen_name = "Big Bolt";
 		description = "Spell of Super Gom.";
 		membership = spells_nature, spells_electric;
 		[template_triggers]

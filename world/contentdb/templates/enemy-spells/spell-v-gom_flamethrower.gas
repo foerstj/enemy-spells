@@ -5,7 +5,7 @@
 	doc = "spell gom flamethrower (player)";
 	[common]
 	{
-		screen_name = "Copper Sulphate";
+		screen_name = "Acid Burn";
 		description = "Spell of Gom.";
 	}
 	[gui]
