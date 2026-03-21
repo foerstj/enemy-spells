@@ -41,10 +41,10 @@
 		required_level = 67;
 		max_level = 87;
 
-		mana_cost_modifier = ((#magic*2) * 1.0) * 3.0;
+		mana_cost_modifier = ((#magic*2) * 1.5) * 3.0;
 
-		attack_damage_modifier_min = (((#magic*3) * 1.0) * 0.538) * 0.9;
-		attack_damage_modifier_max = (((#magic*3) * 1.0) * 0.538) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 1.5) * 0.538) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 1.5) * 0.538) * 1.1;
 
 		cast_sub_animation = 1;
 	}
