@@ -7,6 +7,7 @@
 	{
 		screen_name = "Rockfall";
 		description = "Spell of Gom.";
+		membership = spells_combat, spells_area_effect;
 	}
 	[gui]
 	{

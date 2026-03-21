@@ -5,7 +5,7 @@
 	doc = "spell gom big bolt (player)";
 	[common]
 	{
-		screen_name = "Big Bolt";
+		screen_name = "Supercharge";
 		description = "Spell of Gom.";
 		membership = spells_nature, spells_electric;
 		[template_triggers]
