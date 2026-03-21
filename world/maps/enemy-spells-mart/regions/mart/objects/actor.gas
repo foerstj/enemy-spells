@@ -9,7 +9,7 @@
 	}
 	[placement]
 	{
-	  p position = -1.51562,-2,-2.83588,0x70b8a9da;
+	  p position = -1.24703,-2,-2.82749,0x70b8a9da;
 	}
 }
 [t:enemy_spells_mart_merchant_loa,n:0x00100002]
@@ -23,6 +23,50 @@
 	}
 	[placement]
 	{
-	  p position = 1.23469,-1.98209,-3.06507,0x70b8a9da;
+	  p position = 1.50328,-1.96728,-3.05668,0x70b8a9da;
+	}
+}
+[t:dog_sleeping,n:0x00100003]
+{
+	[placement]
+	{
+	  p position = -1.88968,-2,-2.90812,0x70b8a9da;
+	}
+}
+[t:dsx_paco,n:0x00100004]
+{
+	[mind]
+	{
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+		movement_orders = mo_hold;
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  p position = 2.10529,-1.91527,-2.97102,0x70b8a9da;
+	}
+}
+[t:gremal,n:0x00100007]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -5.39754,-1.94023,2.08444,0x70b8a9da;
+	}
+}
+[t:gremal,n:0x00100005]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,-0.382683;
+	  p position = -0.670726,-8.9,-5.04806,0x8578bfe3;
+	}
+}
+[t:gremal,n:0x00100006]
+{
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382684;
+	  p position = -1.98923,-8.9,-5.23324,0x8578bfe3;
 	}
 }
