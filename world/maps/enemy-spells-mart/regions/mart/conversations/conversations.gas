@@ -1,0 +1,18 @@
+[shop_vanilla]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Here, buy some Enemy Spells of Vanilla enemies!";
+	  f scroll_rate = 10.000000;
+	}
+}
+[shop_loa]
+{
+	[text*]
+	{
+		choice = shop;
+		screen_text = "Here, buy some Enemy Spells of LoA enemies!";
+	  f scroll_rate = 10.000000;
+	}
+}

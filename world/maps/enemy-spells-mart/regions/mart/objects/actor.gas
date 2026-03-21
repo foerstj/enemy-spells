@@ -1,0 +1,28 @@
+[t:enemy_spells_mart_merchant_vanilla,n:0x00100001]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_vanilla;
+		}
+	}
+	[placement]
+	{
+	  p position = -1.51562,-2,-2.83588,0x70b8a9da;
+	}
+}
+[t:enemy_spells_mart_merchant_loa,n:0x00100002]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_loa;
+		}
+	}
+	[placement]
+	{
+	  p position = 1.23469,-1.98209,-3.06507,0x70b8a9da;
+	}
+}

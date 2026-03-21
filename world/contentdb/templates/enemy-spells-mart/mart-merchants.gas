@@ -34,6 +34,10 @@
 			es_feet = bo_bo_le_light;
 		}
 	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
 	[respawn_shrine]
 	{
 	}
@@ -81,9 +85,8 @@
 	}
 	[mind]
 	{
-		jat_talk = world\ai\jobs\actors\good\job_talk.skrit;
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
-
 	[respawn_shrine]
 	{
 	}

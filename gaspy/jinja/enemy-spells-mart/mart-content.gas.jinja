@@ -7,9 +7,12 @@
         {
 			full_ratio = 0;
 
-			{% for spell in data if spell['v'] == 'v' %}
-			il_main = spell_{{spell['tn']}}_player;
-			{% endfor %}
+			[all*]
+			{
+				{% for spell in data if spell['v'] == 'v' %}
+				il_main = spell_{{spell['tn']}}_player;
+				{% endfor %}
+			}
         }
     }
 }
@@ -23,9 +26,12 @@
         {
 			full_ratio = 0;
 
-			{% for spell in data if spell['v'] == 'loa' %}
-			il_main = dsx_spell_{{spell['tn']}}_player;
-			{% endfor %}
+			[all*]
+			{
+				{% for spell in data if spell['v'] == 'loa' %}
+				il_main = dsx_spell_{{spell['tn']}}_player;
+				{% endfor %}
+			}
         }
     }
 }

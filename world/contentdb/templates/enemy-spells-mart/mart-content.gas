@@ -7,33 +7,36 @@
         {
 			full_ratio = 0;
 
-			il_main = spell_braak_iceblast_player;
-			il_main = spell_dark_lunger_zap_player;
-			il_main = spell_ice_mage_balls_player;
-			il_main = spell_sand_mage_blast_player;
-			il_main = spell_ghost_sap_player;
-			il_main = spell_kell_blast_player;
-			il_main = spell_kell_bolt_player;
-			il_main = spell_kell_shot_player;
-			il_main = spell_lava_imp_ball_player;
-			il_main = spell_lava_imp_bullets_player;
-			il_main = spell_maljin_ball_01_player;
-			il_main = spell_maljin_ball_02_player;
-			il_main = spell_maljin_ball_03_player;
-			il_main = spell_wraith_hands_player;
-			il_main = spell_wraith_zap_player;
-			il_main = spell_ice_mage_iceblast_player;
-			il_main = spell_gom_ground_lightning_player;
-			il_main = spell_gom_icesnake_player;
-			il_main = spell_gom_force_player;
-			il_main = spell_gom_flamethrower_player;
-			il_main = spell_skull_rain_player;
-			il_main = spell_gom_throw_player;
-			il_main = spell_gom_big_bolt_player;
-			il_main = spell_gom_spikes_player;
-			il_main = spell_gom_skull_storm_player;
-			il_main = spell_gom_turret_fire_player;
-			il_main = spell_gom_turret_lightning_player;
+			[all*]
+			{
+				il_main = spell_braak_iceblast_player;
+				il_main = spell_dark_lunger_zap_player;
+				il_main = spell_ice_mage_balls_player;
+				il_main = spell_sand_mage_blast_player;
+				il_main = spell_ghost_sap_player;
+				il_main = spell_kell_blast_player;
+				il_main = spell_kell_bolt_player;
+				il_main = spell_kell_shot_player;
+				il_main = spell_lava_imp_ball_player;
+				il_main = spell_lava_imp_bullets_player;
+				il_main = spell_maljin_ball_01_player;
+				il_main = spell_maljin_ball_02_player;
+				il_main = spell_maljin_ball_03_player;
+				il_main = spell_wraith_hands_player;
+				il_main = spell_wraith_zap_player;
+				il_main = spell_ice_mage_iceblast_player;
+				il_main = spell_gom_ground_lightning_player;
+				il_main = spell_gom_icesnake_player;
+				il_main = spell_gom_force_player;
+				il_main = spell_gom_flamethrower_player;
+				il_main = spell_skull_rain_player;
+				il_main = spell_gom_throw_player;
+				il_main = spell_gom_big_bolt_player;
+				il_main = spell_gom_spikes_player;
+				il_main = spell_gom_skull_storm_player;
+				il_main = spell_gom_turret_fire_player;
+				il_main = spell_gom_turret_lightning_player;
+			}
         }
     }
 }
@@ -47,12 +50,15 @@
         {
 			full_ratio = 0;
 
-			il_main = dsx_spell_hassat_shaman_fireshot_player;
-			il_main = dsx_spell_noctiss_sap_player;
-			il_main = dsx_spell_rune_caster_damage_player;
-			il_main = dsx_spell_rune_fiend_blast_player;
-			il_main = dsx_spell_slithermage_blast_player;
-			il_main = dsx_spell_zaurask_caster_player;
+			[all*]
+			{
+				il_main = dsx_spell_hassat_shaman_fireshot_player;
+				il_main = dsx_spell_noctiss_sap_player;
+				il_main = dsx_spell_rune_caster_damage_player;
+				il_main = dsx_spell_rune_fiend_blast_player;
+				il_main = dsx_spell_slithermage_blast_player;
+				il_main = dsx_spell_zaurask_caster_player;
+			}
         }
     }
 }
