@@ -1,4 +1,6 @@
 [node_mesh_index]
 {
-	0x001006aa = t_xxx_flr_08x08-v0;
+	0x00100706 = t_xxx_for_wal-cnr-concave-a;
+	0x0010070c = t_xxx_for_wal-straight-04-a;
+	0x001008fe = t_xxx_ruin_pillar-structure-b;
 }
