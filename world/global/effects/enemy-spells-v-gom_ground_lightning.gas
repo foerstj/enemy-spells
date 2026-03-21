@@ -52,7 +52,8 @@
 			sfx position_at $trackball bip01_L_foot source;	
 			sfx start $trackball;
 
-			pause .2;
+			pause .1;	// EDITED was .2
+			// Edited so that (damage-dealing) fireb effect starts closer - would simply skip smaller melee enemies otherwise (this works with Gom as well lol)
 			
 			sfx create explosion #SOURCE 
 				"must_update()fade_range(2.2,2.2,0)count(35)srate(0.02)ts(1)omni_dir()
