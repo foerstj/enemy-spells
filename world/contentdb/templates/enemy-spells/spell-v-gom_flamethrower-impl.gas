@@ -8,7 +8,7 @@
 	}
 	[spell_fire]
 	{
-		effect_script = gom_flamethrower;
+		effect_script = gom_flamethrower_player;
 		particle_fit = 0.2;
 		watch_caster = true;
 	}
