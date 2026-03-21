@@ -3,7 +3,115 @@
 	name	=gom_ground_lightning_player;
 
 	script	=[[
-			pause 0.33;
-			call gom_ground_lightning [0];
+			pause 0.33;  // ADDED
+
+			sound play s_e_spell_gom_ground_lightning_cast at #SOURCE_POSITION dist 10 30;
+            
+			set $size .3;
+			
+			sfx create cylinder #SOURCE
+				"tin(.5)tout(1.5)dur(2)segments(10)alpha(.15)hp0(0,50,80)
+				hp1(-20,40,80)rp1(.7,.7,0)rp0(.7,.7,0)texture(b_sfx_lightray_01)
+				spin(5)color0(0,0,1)";
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"tin(.5)tout(1.5)dur(2)segments(10)alpha(.15)hp0(0,50,80)
+				hp1(-20,40,80)rp1(.4,.4,0)rp0(.4,.4,0)texture(b_sfx_lightray_02)
+				spin(-7)color0(.4,.4,1)";
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"tin(.5)tout(1.5)dur(2)segments(10)alpha(.15)hp1(-19.96,40,80)
+				hp0(-40,30,80)rp1(.7,.7,0)rp0(.7,.7,0)texture(b_sfx_lightray_01)
+				spin(5)color0(0,0,1)";
+			sfx start #POP;
+			
+			sfx create cylinder #SOURCE
+				"tin(.5)tout(1.5)dur(2)segments(10)alpha(.15)hp1(-19.96,40,80)
+				hp0(-40,30,80)rp1(.4,.4,0)rp0(.4,.4,0)texture(b_sfx_lightray_02)
+				spin(-7)color0(.4,.4,1)";
+			sfx start #POP;
+			
+			pause .33;
+			
+			sfx create orbiter #TARGET 
+				"must_update()invisible()offset(0,.1,0)iphi(0)radius(0)dur(3)";
+			set $orb #POP;
+			sfx snap_to_ground $orb;
+			sfx start $orb;
+			
+			/////////////////////////////////////////
+			// This is the main trackball for the effect, everything is based off of this.
+			sfx create trackball #TARGET 
+				"must_update()invisible()ts(1.75)color0(.5,.5,1)no_collide()accel(0)
+				scale(1.2)dur(4)";
+			set $trackball #POP;
+			sfx rat $trackball;
+			sfx target $trackball $orb;
+			sfx position_at $trackball bip01_L_foot source;	
+			sfx start $trackball;
+
+			pause .2;
+			
+			sfx create explosion #SOURCE 
+				"must_update()fade_range(2.2,2.2,0)count(35)srate(0.02)ts(1)omni_dir()
+				vmin(4)vmax(4)ivel(0,1.6,0)texture(b_sfx_sparkle01)
+				color0(.5,.5,1)color1(.1,.1,.1)radius(.1)scale(2.4)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			set $spark #PEEK;
+			sfx start #POP;
+			
+			sfx create fire #TARGET
+				"must_update()scale(1)count(30)color0(.5,.5,1)color1(0,0,0)alphafade(2)
+				velocity(0,100,0)accel(0,0,0)flamesize(10)max_displace(14)";
+			set $fire2 #POP;
+			sfx rat $fire2;
+			sfx target $fire2 $trackball;
+			sfx start $fire2;
+
+			sfx create fireb #TARGET
+				"must_update()fctrl(1,1,-1)scale(4)count(100)color0(.2,.3,.7)velocity(0,10,0)
+				accel(0,-2,0)flamesize(2)alphafade(.25)[0]";
+			set $sparkle1 #POP;
+			sfx rat $sparkle1;
+			sfx target $sparkle1 $trackball;
+			sfx friendly party $sparkle1;
+			sfx start $sparkle1;
+
+			sfx create lightning #SOURCE 
+				"must_update()dur(2)scale(2)mindisplace(0)maxdisplace(0)color0(.1,.1,1)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball; 
+			sfx target #PEEK source; 
+			sfx offset_bone #PEEK v<0 40 0> source;
+			sfx start #POP;
+
+			sfx create lightning #SOURCE 
+				"must_update()dur(2)scale(1)mindisplace(0)maxdisplace(0)color0(.6,.6,1)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball; 
+			sfx target #PEEK source; 
+			sfx offset_bone #PEEK v<0 40 0> source;
+			sfx start #POP;
+
+			pause 2;
+			
+			sfx finish $sparkle1;
+			
+			pause .15;
+			
+			sfx finish $fire2;
+			sfx finish $spark;
+			
+			pause .15;
+			
+			sfx finish $trackball;
+			
+			
+			pause 2;
+			
+			worldmsg WE_SPELL_SYNC_END #OWNER_GOID #OWNER_GOID #TARGET_GOID;
 			]];
 }
