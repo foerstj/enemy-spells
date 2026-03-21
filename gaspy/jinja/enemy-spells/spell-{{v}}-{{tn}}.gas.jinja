@@ -63,11 +63,11 @@
 		required_level = {{req_lvl}};
 		max_level = {{req_lvl + 20}};
 
-		mana_cost_modifier = ((#magic*2) * {{mcm | float}}) * {{(mbf or 1) | float}};
+		{% set time_factor = (1+cast_reload_delay)/2 %}
+		mana_cost_modifier = ((#magic*2) * {{mcm | float}}) * {{(mbf or 1) * time_factor | float}};
 
-		{% set atf = (1+cast_reload_delay)/2 %}
-		attack_damage_modifier_min = (((#magic*3) * {{adm | float}}) * {{(abf or 1) * atf | float}}) * 0.9;
-		attack_damage_modifier_max = (((#magic*3) * {{adm | float}}) * {{(abf or 1) * atf | float}}) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * {{adm | float}}) * {{(abf or 1) * time_factor | float}}) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * {{adm | float}}) * {{(abf or 1) * time_factor | float}}) * 1.1;
 		{% if csa %}
 
 		cast_sub_animation = {{csa}};
