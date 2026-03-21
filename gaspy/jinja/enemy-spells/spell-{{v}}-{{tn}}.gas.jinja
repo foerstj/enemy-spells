@@ -66,8 +66,8 @@
 		{% set time_factor = (1+cast_reload_delay)/2 %}
 		mana_cost_modifier = ((#magic*2) * {{mbf | float}}) * {{time_factor | float}};
 
-		attack_damage_modifier_min = (((#magic*3) * {{abf | float}}) * {{'%0.3g' | format((aff or 1) * (acf or 1) * time_factor) | float}}) * 0.9;
-		attack_damage_modifier_max = (((#magic*3) * {{abf | float}}) * {{'%0.3g' | format((aff or 1) * (acf or 1) * time_factor) | float}}) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * {{abf | float}}) * {{'%0.3g' | format((aff or 1) * 1/(acf or 1) * time_factor) | float}}) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * {{abf | float}}) * {{'%0.3g' | format((aff or 1) * 1/(acf or 1) * time_factor) | float}}) * 1.1;
 		{% if csa %}
 
 		cast_sub_animation = {{csa}};
