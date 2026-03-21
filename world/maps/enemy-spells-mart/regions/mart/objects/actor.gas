@@ -1,5 +1,9 @@
 [t:enemy_spells_mart_merchant_vanilla,n:0x00100001]
 {
+	[common]
+	{
+		screen_name = "Vanilla Enemy Spells";
+	}
 	[conversation]
 	{
 		[conversations]
@@ -14,6 +18,10 @@
 }
 [t:enemy_spells_mart_merchant_loa,n:0x00100002]
 {
+	[common]
+	{
+		screen_name = "LoA Enemy Spells";
+	}
 	[conversation]
 	{
 		[conversations]
@@ -28,6 +36,15 @@
 }
 [t:dog_sleeping,n:0x00100003]
 {
+	[aspect]
+	{
+	  b is_invincible = true;
+	  b is_selectable = true;
+	}
+	[common]
+	{
+		screen_name = "Barf";
+	}
 	[placement]
 	{
 	  p position = -1.88968,-2,-2.90812,0x70b8a9da;
@@ -35,6 +52,11 @@
 }
 [t:dsx_paco,n:0x00100004]
 {
+	[aspect]
+	{
+	  b is_invincible = true;
+	  b is_selectable = true;
+	}
 	[mind]
 	{
 		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
@@ -54,6 +76,54 @@
 	  p position = -5.39754,-1.94023,2.08444,0x70b8a9da;
 	}
 }
+[t:butterfly,n:0x0010007e]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.04195;
+	}
+	[mind]
+	{
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.872206,0,0.489139;
+	  p position = -5.96609,-1.99478,-2.4681,0x70b8a9da;
+	}
+}
+[t:butterfly,n:0x0010007f]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.05238;
+	}
+	[mind]
+	{
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.178188,0,0.983996;
+	  p position = -5.45928,-1.91394,-2.4656,0x70b8a9da;
+	}
+}
+[t:butterfly,n:0x00100081]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.04575;
+	}
+	[mind]
+	{
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.175551,0,0.98447;
+	  p position = -1.99208,-8.9,-5.48778,0x7148281a;
+	}
+}
 [t:gremal,n:0x00100005]
 {
 	[placement]
@@ -68,5 +138,21 @@
 	{
 	  q orientation = 0,0.92388,0,0.382684;
 	  p position = -1.98923,-8.9,-5.23324,0x8578bfe3;
+	}
+}
+[t:butterfly,n:0x00100080]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.943851;
+	}
+	[mind]
+	{
+	  b on_enemy_entered_weapon_engage_range_attack = true;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.406959,0,0.913446;
+	  p position = 1.57487,-8.9,-4.98211,0x8578bfe3;
 	}
 }

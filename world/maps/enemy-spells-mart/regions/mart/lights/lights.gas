@@ -9,16 +9,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x70B8A9DA;
-		  f x = 0.014279;
+		  f x = 0.026991;
 		  f y = 0.288237;
-		  f z = 4.517945;
+		  f z = 4.513754;
 		}
 	}
 	[t:point,n:light_0x0b4c5da6]
@@ -30,16 +30,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x5C4DCAD4;
-		  f x = 6.260011;
+		  f x = 6.247299;
 		  f y = -13.844844;
-		  f z = -5.871753;
+		  f z = -5.867562;
 		}
 	}
 	[t:point,n:light_0x1fede86c]
@@ -93,16 +93,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x4ADF6D64;
-		  f x = 6.090814;
+		  f x = 6.086622;
 		  f y = -14.098444;
-		  f z = -6.058802;
+		  f z = -6.071515;
 		}
 	}
 	[t:point,n:light_0x5ee25bfc]
@@ -219,16 +219,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x70B8A9DA;
-		  f x = -3.191234;
+		  f x = -3.178522;
 		  f y = 0.562995;
-		  f z = -1.494148;
+		  f z = -1.498339;
 		}
 	}
 	[t:point,n:light_0x8d319240]
@@ -261,16 +261,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x5E7430B4;
-		  f x = 5.080585;
+		  f x = 5.084776;
 		  f y = -15.300396;
-		  f z = -5.982681;
+		  f z = -5.969968;
 		}
 	}
 	[t:point,n:light_0x98f93466]
@@ -303,16 +303,16 @@
 	  x color = 0xFFFFFF00;
 	  b draw_shadow = false;
 	  f inner_radius = 0.000000;
-	  f intensity = 1.000000;
+	  f intensity = 0.500000;
 	  b occlude_geometry = true;
 	  b on_timer = false;
 	  f outer_radius = 4.000000;
 		[position]
 		{
 		  x node = 0x70B8A9DA;
-		  f x = -3.213912;
+		  f x = -3.201199;
 		  f y = 0.551601;
-		  f z = 4.555266;
+		  f z = 4.551075;
 		}
 	}
 }
