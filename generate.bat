@@ -4,4 +4,7 @@ set bits=%~dp0.
 pushd "%GasPy%"
 venv\Scripts\python -m jinja gaspy\jinja\enemy-spells world\contentdb\templates\enemy-spells --bits "%bits%"
 if %errorlevel% neq 0 pause
+
+venv\Scripts\python -m jinja gaspy\jinja\enemy-spells-mart world\contentdb\templates\enemy-spells-mart --for-all gaspy\jinja\enemy-spells --bits "%bits%"
+if %errorlevel% neq 0 pause
 popd

@@ -1,0 +1,31 @@
+[t:template,n:enemy_spells_mart_merchant_vanilla_content]
+{
+    specializes = enemy_spells_mart_merchant_vanilla_content_base;
+    [inventory]
+    {
+        [store_pcontent]
+        {
+			full_ratio = 0;
+
+			{% for spell in data if spell['v'] == 'v' %}
+			il_main = spell_{{spell['tn']}}_player;
+			{% endfor %}
+        }
+    }
+}
+
+[t:template,n:enemy_spells_mart_merchant_loa_content]
+{
+    specializes = enemy_spells_mart_merchant_loa_content_base;
+    [inventory]
+    {
+        [store_pcontent]
+        {
+			full_ratio = 0;
+
+			{% for spell in data if spell['v'] == 'loa' %}
+			il_main = dsx_spell_{{spell['tn']}}_player;
+			{% endfor %}
+        }
+    }
+}
