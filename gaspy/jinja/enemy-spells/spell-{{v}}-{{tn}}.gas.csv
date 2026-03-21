@@ -33,5 +33,5 @@ gom_throw;Energy Ball;;Gom;combat;v;64;140000;1;;;;1;;12;3;default;gom_throw_cha
 gom_big_bolt;Big Bolt;;Gom;nature;v;65;150000;1;;;;1;electric;8;5;;big_bolt_charge;;;x;1
 gom_spikes;Lava Spikes;;Gom;combat;v;66;160000;1;6;0.8;;1;;10;1.5;;;;;x;
 gom_skull_storm;Skull Storm;;Gom;combat;v;67;160000;1;6;0.65;0.7;1;;12;5;;gom_skull_storm_player_charge;;;x;1
-gom_turret_fire;Fire Turret;;Gom;combat;v;69;180000;1;10;;;1;fire;14;3;;;;;x;1
-gom_turret_lightning;Lightning Turret;;Gom;nature;v;68;170000;1;10;;;1;electric;14;3;;;;;x;1
+gom_turret_fire;Fire Turret;;Gom;combat;v;69;180000;1;9;;;1;fire;14;3;;;;;x;1
+gom_turret_lightning;Lightning Turret;;Gom;nature;v;68;170000;1;9;;;1;electric;14;3;;;;;x;1
