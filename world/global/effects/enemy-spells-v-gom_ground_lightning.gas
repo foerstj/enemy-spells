@@ -4,6 +4,6 @@
 
 	script	=[[
 			pause 0.33;
-			call gom_ground_lightning;
+			call gom_ground_lightning [0];
 			]];
 }
