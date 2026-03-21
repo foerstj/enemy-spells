@@ -17,27 +17,27 @@
 
 			sfx create fireb #SOURCE 
 				"offset(0,.2,.5)must_update()dark()fctrl(0,1,10)flamesize(4)alphafade(.5)ts(.5)dur(1.75)
-				color0(.4,1,0)velocity(0,60,2)accel($accel)cvel(1)lower_r0(0)
+				color0(.4,1,0)velocity(0,2,60)accel($accel)cvel(1)lower_r0(0)
 				lower_r1(0)upper_r0($width1)upper_r1($width2)count($flames2)
-				bone_orient()[0]";
+				[0]";
 			//sfx attach_point #PEEK Bip01_L_Hand target;
 			//sfx friendly party #PEEK;
 			sfx start #POP;
 
 			sfx create fireb #SOURCE 
 				"offset(0,.2,.5)must_update()fctrl(0,0,1)flamesize(.3)alphafade(.5)ts(.5)dur(1.75)
-				color0(1,1,0)velocity(0,60,0)accel($accel)cvel(1)lower_r0(0)
+				color0(1,1,0)velocity(0,0,60)accel($accel)cvel(1)lower_r0(0)
 				lower_r1(0)upper_r0($width1)upper_r1($width2)count($flames2)
-				bone_orient()";
+				";
 			//sfx attach_point #PEEK Bip01_L_Hand target;
 			//sfx friendly party #PEEK;
 			sfx start #POP;
 
 			sfx create fireb #SOURCE 
 				"offset(0,.2,.5)must_update()fctrl(0,1,10)flamesize(1)alphafade(.5)ts(.5)dur(1.75)
-				color0(.6,.8,0)velocity(0,60,-2)accel($accel)cvel(1)
+				color0(.6,.8,0)velocity(0,-2,60)accel($accel)cvel(1)
 				lower_r0(3)lower_r1(5)upper_r0($width1)upper_r1(60)
-				count($flames2)bone_orient()";
+				count($flames2)";
 			//sfx attach_point #PEEK Bip01_L_Hand target;
 			//sfx friendly party #PEEK;
 			sfx start #POP;
