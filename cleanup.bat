@@ -1,8 +1,7 @@
 :: names
-set mod=enemy-spells
 set mod_cs=Enemy Spells
-set map=%mod%-demo
 set map_cs=%mod_cs% Demo
+set mart_cs=%mod_cs% Mart
 
 :: path of DS installation
 set ds=%DungeonSiege%
@@ -12,3 +11,5 @@ del "%ds%\Resources\%mod_cs%.dsres"
 del "%ds%\Resources\%mod_cs% - *.dsres"
 del "%ds%\Maps\%map_cs%.dsmap"
 del "%ds%\Resources\%map_cs%.dsres"
+del "%ds%\Maps\%mart_cs%.dsmap"
+del "%ds%\Resources\%mart_cs%.dsres"
