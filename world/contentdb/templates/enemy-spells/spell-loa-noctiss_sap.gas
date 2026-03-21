@@ -44,7 +44,7 @@
 
 		mana_cost_modifier = ((#magic*2) * 0.7) * 0.65;
 
-		attack_damage_modifier_min = (((#magic*3) * 0.6) * 0.65) * 0.9;
-		attack_damage_modifier_max = (((#magic*3) * 0.6) * 0.65) * 1.1;
+		attack_damage_modifier_min = (((#magic*3) * 0.6) * 0.675) * 0.9;
+		attack_damage_modifier_max = (((#magic*3) * 0.6) * 0.675) * 1.1;
 	}
 }
