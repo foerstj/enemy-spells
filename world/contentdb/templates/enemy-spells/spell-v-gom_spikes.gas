@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Lava Spikes";
-		description = "Spell of Super Gom.";
+		description = "Spell of Gom.";
 	}
 	[gui]
 	{

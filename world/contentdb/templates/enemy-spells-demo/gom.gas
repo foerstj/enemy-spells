@@ -343,18 +343,18 @@
 		spew_equipped_kill_count = ;
     	[other]
 		{
-			//il_active_primary_spell = spell_gom_big_bolt;
-			il_active_primary_spell=spell_gom_throw;
-			il_spell_1=spell_gom_turret_fire;
-			il_spell_2=spell_gom_turret_lightning;
-			il_spell_3=spell_super_gom_summon;
-			il_spell_4=spell_gom_spikes;
-			il_spell_5=spell_gom_firebreath;
-			il_spell_6=spell_gom_laser;
-			il_spell_7=spell_super_gom_force;
-			il_spell_8=spell_gom_big_bolt;
-			il_spell_9=spell_gom_skull_storm;
-			il_spell_10=spell_gom_heal;
+			il_active_primary_spell = spell_gom_big_bolt;
+			//il_active_primary_spell=spell_gom_throw;
+			//il_spell_1=spell_gom_turret_fire;
+			//il_spell_2=spell_gom_turret_lightning;
+			//il_spell_3=spell_super_gom_summon;
+			//il_spell_4=spell_gom_spikes;
+			//il_spell_5=spell_gom_firebreath;
+			//il_spell_6=spell_gom_laser;
+			//il_spell_7=spell_super_gom_force;
+			//il_spell_8=spell_gom_big_bolt;
+			//il_spell_9=spell_gom_skull_storm;
+			//il_spell_10=spell_gom_heal;
 		}
 
     	[pcontent]

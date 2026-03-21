@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Skull Storm";
-		description = "Spell of Super Gom.";
+		description = "Spell of Gom.";
 		[template_triggers]
 		{
 			[*]

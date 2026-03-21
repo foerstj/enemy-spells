@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Fire Turret";
-		description = "Spell of Super Gom.";
+		description = "Spell of Gom.";
 		membership = spells_combat, spells_fire;
 	}
 	[gui]

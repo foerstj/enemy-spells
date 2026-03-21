@@ -29,9 +29,9 @@ gom_icesnake;Icesnake;;Gom;nature;v;60;120000;1;;1;;ice;12;1;;;;;x;
 gom_force;Force;;Gom;combat;v;63;140000;1;;1;;;12;2;default;;gom_force;;;
 gom_flamethrower;Acid Burn;;Gom;combat;v;59;110000;1;;1;;;8;2.5;;;;;x;
 skull_rain;Rockfall;;Gom;combat;v;61;130000;1;;1;;;12;1.5;;;;;x;1
-gom_throw;Energy Ball;;Super Gom;combat;v;64;140000;1;;1;;;12;3;default;gom_throw_charge;gom_throw_player;;;1
-gom_big_bolt;Big Bolt;;Super Gom;nature;v;65;150000;1;;1;;electric;8;5;;big_bolt_charge;;;x;1
-gom_spikes;Lava Spikes;;Super Gom;combat;v;66;160000;1;;1;;;10;1.5;;;;;x;
-gom_skull_storm;Skull Storm;;Super Gom;combat;v;67;160000;1;;1;;;12;5;;gom_skull_storm_player_charge;;;x;1
-gom_turret_fire;Fire Turret;;Super Gom;combat;v;69;180000;1;;1;;fire;14;3;;;;;x;1
-gom_turret_lightning;Lightning Turret;;Super Gom;nature;v;68;170000;1;;1;;electric;14;3;;;;;x;1
+gom_throw;Energy Ball;;Gom;combat;v;64;140000;1;;1;;;12;3;default;gom_throw_charge;gom_throw_player;;;1
+gom_big_bolt;Big Bolt;;Gom;nature;v;65;150000;1;;1;;electric;8;5;;big_bolt_charge;;;x;1
+gom_spikes;Lava Spikes;;Gom;combat;v;66;160000;1;;1;;;10;1.5;;;;;x;
+gom_skull_storm;Skull Storm;;Gom;combat;v;67;160000;1;;1;;;12;5;;gom_skull_storm_player_charge;;;x;1
+gom_turret_fire;Fire Turret;;Gom;combat;v;69;180000;1;;1;;fire;14;3;;;;;x;1
+gom_turret_lightning;Lightning Turret;;Gom;nature;v;68;170000;1;;1;;electric;14;3;;;;;x;1

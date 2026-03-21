@@ -6,7 +6,7 @@
 	[common]
 	{
 		screen_name = "Big Bolt";
-		description = "Spell of Super Gom.";
+		description = "Spell of Gom.";
 		membership = spells_nature, spells_electric;
 		[template_triggers]
 		{
