@@ -12,15 +12,26 @@ Vanilla Attacks:
 - "Crimson Streak" (spell of the Wraith Mage) for CM level 47
 - "Searing Blast" (spell of the Sand Mage) for CM level 49
 - "Spirit Sap" (spell of the Ghost) for CM level 56
+- "Acid Burn" (spell of Gom) for CM level 59
+- "Icesnake" (spell of Gom) for NM level 60
 - "Angst" (spell of the Wraith Warlock) for CM level 60
 - "Comet Blast" (spell of the Kell) for CM level 60
 - "Furnace Blast" (spell of the Kell) for CM level 60
 - "Scorching Jolt" (spell of the Kell) for CM level 60
 - "Firefly Sting" (spell of the Lava Runner) for CM level 60
+- "Rockfall" (spell of Gom) for CM level 61
+- "Frostbeam" (spell of Gom) for NM level 62
 - "Stinging Firezap" (spell of the Lava Mage) for CM level 62
 - "Vindiction" (spell of the Maljin Phantom) for CM level 63
 - "Sunset Rage" (spell of the Maljin Phantom) for CM level 63
 - "Sting Flurry" (spell of the Maljin Phantom) for CM level 63
+- "Force" (spell of Gom) for CM level 63
+- "Energy Ball" (spell of Gom) for CM level 64
+- "Supercharge" (spell of Gom) for NM level 65
+- "Lava Spikes" (spell of Gom) for CM level 66
+- "Skull Storm" (spell of Gom) for CM level 67
+- "Lightning Turret" (spell of Gom) for NM level 68
+- "Fire Turret" (spell of Gom) for CM level 69
 
 LoA Attacks:
 - "Feline Flash" (spell of the Hassat Shaman) for NM level 15
@@ -47,4 +58,4 @@ Required level is the typical encounter level of the respective enemy. The spell
 ## Attribution
 
 - Some of the icons are made by Eksevis.
-- The names of the Vanilla spells are taken from the Sybex Guide.
+- The names of some of the Vanilla spells are taken from the Sybex Guide.
