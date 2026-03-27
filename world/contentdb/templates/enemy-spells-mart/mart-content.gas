@@ -1,64 +1,54 @@
 [t:template,n:enemy_spells_mart_merchant_vanilla_content]
 {
-    specializes = enemy_spells_mart_merchant_vanilla_content_base;
-    [inventory]
-    {
-        [store_pcontent]
-        {
-			full_ratio = 0;
-
-			[all*]
-			{
-				il_main = spell_braak_iceblast_player;
-				il_main = spell_dark_lunger_zap_player;
-				il_main = spell_ice_mage_balls_player;
-				il_main = spell_sand_mage_blast_player;
-				il_main = spell_ghost_sap_player;
-				il_main = spell_kell_blast_player;
-				il_main = spell_kell_bolt_player;
-				il_main = spell_kell_shot_player;
-				il_main = spell_lava_imp_ball_player;
-				il_main = spell_lava_imp_bullets_player;
-				il_main = spell_maljin_ball_01_player;
-				il_main = spell_maljin_ball_02_player;
-				il_main = spell_maljin_ball_03_player;
-				il_main = spell_wraith_hands_player;
-				il_main = spell_wraith_zap_player;
-				il_main = spell_ice_mage_iceblast_player;
-				il_main = spell_gom_ground_lightning_player;
-				il_main = spell_gom_icesnake_player;
-				il_main = spell_gom_force_player;
-				il_main = spell_gom_flamethrower_player;
-				il_main = spell_skull_rain_player;
-				il_main = spell_gom_throw_player;
-				il_main = spell_gom_big_bolt_player;
-				il_main = spell_gom_spikes_player;
-				il_main = spell_gom_skull_storm_player;
-				il_main = spell_gom_turret_fire_player;
-				il_main = spell_gom_turret_lightning_player;
-			}
-        }
-    }
+	specializes = enemy_spells_mart_merchant_vanilla_content_base;
+	[store]
+	{
+		[item_restock]
+		{
+			spell_braak_iceblast_player = 1;
+			spell_dark_lunger_zap_player = 1;
+			spell_ice_mage_balls_player = 1;
+			spell_sand_mage_blast_player = 1;
+			spell_ghost_sap_player = 1;
+			spell_kell_blast_player = 1;
+			spell_kell_bolt_player = 1;
+			spell_kell_shot_player = 1;
+			spell_lava_imp_ball_player = 1;
+			spell_lava_imp_bullets_player = 1;
+			spell_maljin_ball_01_player = 1;
+			spell_maljin_ball_02_player = 1;
+			spell_maljin_ball_03_player = 1;
+			spell_wraith_hands_player = 1;
+			spell_wraith_zap_player = 1;
+			spell_ice_mage_iceblast_player = 1;
+			spell_gom_ground_lightning_player = 1;
+			spell_gom_icesnake_player = 1;
+			spell_gom_force_player = 1;
+			spell_gom_flamethrower_player = 1;
+			spell_skull_rain_player = 1;
+			spell_gom_throw_player = 1;
+			spell_gom_big_bolt_player = 1;
+			spell_gom_spikes_player = 1;
+			spell_gom_skull_storm_player = 1;
+			spell_gom_turret_fire_player = 1;
+			spell_gom_turret_lightning_player = 1;
+		}
+	}
 }
 
 [t:template,n:enemy_spells_mart_merchant_loa_content]
 {
-    specializes = enemy_spells_mart_merchant_loa_content_base;
-    [inventory]
-    {
-        [store_pcontent]
-        {
-			full_ratio = 0;
-
-			[all*]
-			{
-				il_main = dsx_spell_hassat_shaman_fireshot_player;
-				il_main = dsx_spell_noctiss_sap_player;
-				il_main = dsx_spell_rune_caster_damage_player;
-				il_main = dsx_spell_rune_fiend_blast_player;
-				il_main = dsx_spell_slithermage_blast_player;
-				il_main = dsx_spell_zaurask_caster_player;
-			}
-        }
-    }
+	specializes = enemy_spells_mart_merchant_loa_content_base;
+	[store]
+	{
+		[item_restock]
+		{
+			spell_hassat_shaman_fireshot_player = 1;
+			spell_noctiss_sap_player = 1;
+			spell_rune_caster_damage_player = 1;
+			spell_rune_fiend_blast_player = 1;
+			spell_slithermage_blast_player = 1;
+			spell_zaurask_caster_player = 1;
+		}
+	}
 }
